@@ -3,3 +3,5 @@ Marketing website for Mesh2Motion app. The goal is to have something more inform
 
 # Technology
 Just a simple HTML website. No frameworks or any of that jazz. Just open the HTML page in a web browser.
+
+change counter: 1
