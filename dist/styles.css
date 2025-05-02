@@ -9,12 +9,27 @@ header {
     color: #fff;
     padding: 1em;
     text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 4px 9px black;
 }
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+
 
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 header nav ul li {
@@ -27,8 +42,17 @@ header * {
 }
 
 header nav a {
-
     text-decoration: none;
+    padding: 0.4rem 1rem;
+}
+header nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.image-link:hover{
+    background: none;
+    opacity: 0.8;
 }
 
 main {
@@ -69,10 +93,31 @@ footer {
     color: #fff;
     padding: 1em;
     text-align: center;
-    width: 100%;
 }
 
 footer p {
     max-width: 800px;
     margin: 0 auto;
+}
+
+footer a {
+    color: white;
+}
+
+.primary-button {
+    background: #42a9c9;
+    background: linear-gradient(180deg, rgba(66, 169, 201, 1) 0%, rgba(48, 135, 217, 1) 100%);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px #2d090933;
+}
+
+.primary-button:hover {
+    background: #42a9c9;
+    background: linear-gradient(180deg, rgba(48, 135, 217, 1) 0%, rgba(66, 169, 201, 1) 100%);
 }
