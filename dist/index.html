@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesh2Motion Alpha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header>
@@ -15,26 +19,76 @@
                         <img src="./mesh2motion.svg" style="width: 200px; height: auto" />
                     </a>
                 </li>
-                <li><a href="#how-it-works">How it Works</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="https://github.com/scottpetrovic/ModelMotionizer"><img src="./github-white-icon.png" width="20" /> Source</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li href="#about">About</li>
+                <li><a target="_blank" href="https://github.com/scottpetrovic/mesh2motion-app/"><img src="./github-white-icon.png" width="20" /> 
+                    Source
+                
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 32 32" class="external-link-icon" aria-label="External Link">
+                        <path fill="white" d="M25.152 16.576v5.696q0 2.144-1.504 3.648T20 27.424H5.152q-2.144.0-3.648-1.504T0 22.272V7.424q0-2.112 1.504-3.616t3.648-1.536h12.576q.224.0.384.16t.16.416V4q0 .256-.16.416t-.384.16H5.152q-1.184.0-2.016.832t-.864 2.016v14.848q0 1.184.864 2.016t2.016.864H20q1.184.0 2.016-.864t.832-2.016v-5.696q0-.256.16-.416t.416-.16h1.152q.256.0.416.16t.16.416zM32 1.152v9.12q0 .48-.352.8t-.8.352-.8-.352l-3.136-3.136-11.648 11.648q-.16.192-.416.192t-.384-.192l-2.048-2.048q-.192-.16-.192-.384t.192-.416L24.064 5.088l-3.136-3.136q-.352-.352-.352-.8t.352-.8.8-.352h9.12q.48.0.8.352t.352.8z"></path>
+                    </svg>
+                
+                </a></li>
                 <li style="flex-grow: 1"></li>
                 <li><a class="primary-button" href="https://app.mesh2motion.org">Try it out</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <div style="background: url('./images/human-screenshot.png'); background-size: cover; background-position: center; height: 600px; width: 100%; position: relative; z-index: -1">
+            <div style="height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
 
-        <section id="nav-filler">   </section>
-        <section id="hero">
-            <h1>Bring Your 3D Models to Life</h1>
-            <p>mesh2motion is an open-source application that allows you to animate your 3D models using a skeleton. It supports importing GLB and GLTF formats and provides a library of animations for both human and animal skeletons.</p>
-            <p>With mesh2motion, you can easily position the skeleton inside your mesh and animate it with a few clicks. The application is designed to be user-friendly and intuitive, making it accessible for both beginners and experienced users.</p>  
+            <section id="hero">            
+                <h2>Bring Your 3D Models to Life</h1>
+                <p>A FREE & open-source web application that allows you to animate your 3D models. Animate both humanoid and four-legged creatures.</p>
+            </section>
+
+        </div>
+
+
+        <section id="features">
+
+                <span>
+                    <img src="./images/animal-example.png" alt="Screenshot of the application" />
+                </span>
+
+                <span>
+                    <h2>Human & Animal rigs</h2>
+                    <ul>
+                        <li>Supports importing GLB and GLTF formats</li>
+                        <li>Human and animal skeleton options</li>
+                        <li>Intuitive skeleton positioning</li>
+                    </ul>  
+                </span>
+   
         </section>
-<section id="about">
-            <h2>Video Walkthrough</h2>           
-            <iframe width="100%" height="515" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+        <section id="features-2">
+           
+            <span>
+                <h2>Export Animations</h2>
+                <ul>
+                    <li>T-Pose and A-Pose models supported workflows</li>
+                    <li>Animations provided (free human animation library from https://quaternius.com/)</li>
+                    <li>Choose multiple animations to export for web or game engines with GLB</li>
+                </ul>
+            </span>
+
+            <span>
+                <img src="./images/human-animations-list.png" alt="Screenshot of the application" />
+            </span>
+
+
+        </section>
+
+
+        <section id="walkthrough" style="flex-direction: column; gap: 0">
+                  <h2>Video Walkthrough</h2>           
+                <iframe width="100%" height="515" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
         </section>  
+
+
 
         <section id="how-it-works">
             <h2>How it Works</h2>
@@ -46,20 +100,21 @@
                 <li>Export animations to GLB file</li>
             </ol>
         </section>
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Supports importing GLB and GLTF formats</li>
-                <li>Human and animal skeleton options</li>
-                <li>Intuitive skeleton positioning</li>
-                <li>Animations provided (free human animation library from https://quaternius.com/)</li>
-                <li>Export animations for web or game engines</li>
-            </ul>
+
+        <section id="about">
+            <h2>About</h2>
+
+            <span>
+                <p>Mesh2Motion is an open-source project. The goal of this project is to provide a free and easy way to animate 3D models for web and game engines. With the way 3d animations and modeling tools are progressing, there just needs to be some tool like this that is open-source that can evolve.</p>
+                <p>For more information, visit the <a href="https://github.com/scottpetrovic/mesh2motion-app/">GitHub repository</a>.</p>
+
+            </span>
         </section>
+
 
     </main>
     <footer>
-        <p><a href="https://opensource.org/licenses/MIT">MIT License</a></p>
+        <p><a target="_blank" href="https://opensource.org/licenses/MIT">MIT License</a></p>
     </footer>
 </body>
 </html>

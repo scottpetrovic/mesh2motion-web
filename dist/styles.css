@@ -1,3 +1,7 @@
+* {
+    font-family: 'Jost', Arial, Helvetica, sans-serif;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,14 +9,13 @@ body {
 }
 
 header {
-    background-color: #333;
+    background: #543b7d;
     color: #fff;
     padding: 1em;
-    text-align: center;
     position: fixed;
     left: 0;
     right: 0;
-    box-shadow: 0px 4px 9px black;
+    box-shadow: 0px 4px 9px #1f03136c;
 }
 
 a {
@@ -21,6 +24,11 @@ a {
 }
 a:hover {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -44,9 +52,10 @@ header * {
 header nav a {
     text-decoration: none;
     padding: 0.4rem 1rem;
+    transition: background-color 0.3s ease;
 }
 header nav a:hover {
-    background-color: #555;
+    background-color: #ffffff41;
     border-radius: 5px;
 }
 
@@ -59,24 +68,42 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em 0;
 }
 
 section {
     background-color: #f7f7f7;
     padding: 1em;
-    margin-bottom: 20px;
+    margin-top: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 800px;
+    max-width: 1056px;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+section img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 0px #4b1a75;
+}
+
+section span {
+    width: 50%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
 }
 
 h1, h2 {
-    color: #333;
+    color: #774eb7;
+    font-weight: 400;
 }
 
 button {
-    background-color: #333;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -84,12 +111,10 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
-}
 
 footer {
-    background-color: #333;
+    margin-top: 3rem;
+    background-color: #605e88;
     color: #fff;
     padding: 1em;
     text-align: center;
@@ -120,4 +145,18 @@ footer a {
 .primary-button:hover {
     background: #42a9c9;
     background: linear-gradient(180deg, rgba(48, 135, 217, 1) 0%, rgba(66, 169, 201, 1) 100%);
+}
+
+#hero {
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    max-width: 25rem;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 5px;
+}
+#hero h2 {
+    margin: 0;
+    font-style: italic
 }
