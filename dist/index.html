@@ -19,10 +19,9 @@
                         <img src="./images/mesh2motion.svg" style="width: 200px; height: auto" />
                     </a>
                 </li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How it Works</a></li>
-                <li href="#about">About</li>
-                <li><a target="_blank" href="https://github.com/scottpetrovic/mesh2motion-app/"><img src="./github-white-icon.png" width="20" /> 
+                <li class="mobile-hidden"><a href="#features">Features</a></li>     
+                <li class="mobile-hidden"><a href="#walkthrough">Walkthrough</a></li>              
+                <li class="mobile-hidden"><a target="_blank" href="https://github.com/scottpetrovic/mesh2motion-app/"><img src="./github-white-icon.png" width="20" /> 
                     Source
                 
                     <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 32 32" class="external-link-icon" aria-label="External Link">
@@ -30,8 +29,8 @@
                     </svg>
                 
                 </a></li>
-                <li style="flex-grow: 1"></li>
-                <li><a class="primary-button" href="https://app.mesh2motion.org">Try it out</a></li>
+                <li class="mobile-hidden" style="flex-grow: 1"></li>
+                <li class="mobile-hidden"><a class="primary-button" href="https://app.mesh2motion.org">Try it out</a></li>
             </ul>
         </nav>
     </header>
@@ -46,8 +45,12 @@
 
         </div>
 
+        <section id="features" style="flex-direction: column; gap: 0; align-items: center">
+            <h1>Features</h1>
+        </section>
 
-        <section id="features">
+
+        <section id="features-2">
 
                 <span>
                     <img src="./images/animal-example.png" alt="Screenshot of the application" />
@@ -64,13 +67,13 @@
    
         </section>
 
-        <section id="features-2">
+        <section id="features-3">
            
             <span>
                 <h2>Export Animations</h2>
                 <ul>
                     <li>T-Pose and A-Pose models supported workflows</li>
-                    <li>Animations provided (free human animation library from https://quaternius.com/)</li>
+                    <li>Animations provided (free human animation library from <a href="https://quaternius.com/">Quaternius</a>)</li>
                     <li>Choose multiple animations to export for web or game engines with GLB</li>
                 </ul>
             </span>
@@ -83,35 +86,21 @@
         </section>
 
 
-        <section id="walkthrough" style="flex-direction: column; gap: 0">
-            <h2>Video Walkthrough</h2>     
-            <p>Coming soon...</p>      
-            <iframe width="100%" height="515" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <section id="walkthrough" style="flex-direction: column; gap: 0; align-items: center">
+            <h2>Video Walkthrough</h2>   
+            <iframe src="https://www.youtube.com/embed/pDUxgNgBhTQ"></iframe>
         </section>  
 
 
-
-        <section id="how-it-works">
-            <h2>How it Works</h2>
-            <ol>
-                <li>Import your 3D model</li>
-                <li>Choose a skeleton (human or animal)</li>
-                <li>Position the skeleton inside your mesh</li>
-                <li>Animate your mesh</li>
-                <li>Export animations to GLB file</li>
-            </ol>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
+        <section id="open-source" style="flex-direction: column; gap: 0; align-items: center">
+            <h2>FREE &amp; Open-Source</h2>
 
             <span>
-                <p>Mesh2Motion is an open-source project. The goal of this project is to provide a free and easy way to animate 3D models for web and game engines. With the way 3d animations and modeling tools are progressing, there just needs to be some tool like this that is open-source that can evolve.</p>
-                <p>For more information, visit the <a href="https://github.com/scottpetrovic/mesh2motion-app/">GitHub repository</a>.</p>
+                <p>Mesh2Motion is an open-source project.  With the way 3d animations and modeling tools are progressing, there just needs to be some tool like this that is open-source that can evolve. The goal of this project is to provide a free and easy way to animate 3D models for web and game engines. Everything should be freely available for both personal and commerical projects.</p>
+                <p>Check out the <a href="https://github.com/scottpetrovic/mesh2motion-app/">GitHub repository</a> for all the code.</p>
 
             </span>
         </section>
-
 
     </main>
     <footer>
