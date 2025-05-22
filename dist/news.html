@@ -42,16 +42,44 @@
             <h1 style="margin: 4rem auto; margin-bottom: 0rem;">News</h1>
         </section>
 
-        <section style="flex-direction: column; gap: 0;">
-            <h3>Update 1</h3>
+        <section class="news-item">
+            <h2>Update 1: Time to Fly!</h2>
             <p class="news-date">5/22/2025 | Scott Petrovic</p>
-            <p>Hello. This is a news post to represent the original release of the site. </p>
+            <p>I will try to do these updates to summarize anytime I push out a set of changes. I thought about just slowly pushing stuff out to the site, but that seemed a bit chaotic for some reason. This app will remain in alpha until I decide it is feature complete and stable enough. Then I will move it to Beta. </p>
+                
+            <p>This update focuses on adding a new skeleton type. I do have terrible focus, so it also includes other things. I want to really think about this application from a general rigging standpoint, so I want to think about how every change would affect every rigt type (animal, human, bird, etc). I have more ideas ready to start coding, as well as make a few issues that people have contacted me about for a better experience.</p>
+
+            <iframe src="https://www.youtube.com/embed/pDUxgNgBhTQ"></iframe>
+
+            <strong>Release Notes for Update 1</strong>
+
+               <ul class="release-notes-list">
+                <li>Feature: New Bird skeleton type added with a few animations</li>
+                <li>Importing: When 3d model is imported, scaling only happens if it is too large or very small</li>
+                <li>Skinning: Added a debug option to show weight painted model for reference</li>
+                <li>Animation: Keep the hip bone transform data with all skeleton types (previously only worked for humans)</li>
+                <li>Blender 3D Source: More high-poly reference model for fox to help simulate deformations better</li>
+                <li>Blender 3D Source: Added bird model along with separate animation file</li>
+                <li>Blender 3D Source: Make bone naming more consistent across skeleton types</li>
+                <li>Animation List: Allow for appending different sets of animations when viewing listing (Human now has an extra custom YMCA on top of the Quaternius animation data)</li>
+                <li>Animation List: Have animation progress bar with currently playing animation</li>
+                <li>Animation List: Alphabetize animation names to make finding easier</li>
+                <li>Editing Skeleton: Add ability to rotate bones when editing skeleton</li>
+                <li>UX: Show hover effect when mouse is over a joint that will be selected for visual feedback</li>
+                <li>UX: Have skeleton joints and bones keep same size regardless of zoom level</li>
+                <li>UI: Used fixed positioning for header so right click will work at the top of application</li>
+                <li>Performance: Very large speed up for skinning process. This is because of caching and other optimizations</li>
+            </ul>
+
+            <p>All updates will be applied the next time you visit <a href="https://app.mesh2motion.org/">https://app.mesh2motion.org/</a></p>
+
+            
         </section>
 
-        <section  style="flex-direction: column; gap: 0;">
-            <h3>Initial release</h3>
+        <section class="news-item">
+            <h2>Mesh2Motion Enters the Fight!</h2>
             <p class="news-date">5/11/2025 | Scott Petrovic</p>
-            <p>Hello. This is a news post to represent the original release of the site. </p>
+            <p>Hello. This is a news post to represent the original release of the site and application. Updates will be sporadic as I am the only person working on this. I have a bit of a vision with how this will progress, so I probably won't be taking too many external contributors right now. </p>
         </section>
 
 
