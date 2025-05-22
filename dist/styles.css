@@ -26,6 +26,10 @@ a:hover {
     text-decoration: none;
 }
 
+a.active {
+    font-weight: bold;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -54,7 +58,7 @@ header nav a {
     padding: 0.4rem 1rem;
     transition: background-color 0.3s ease;
 }
-header nav a:hover {
+header nav a:hover, a.active {
     background-color: #ffffff41;
     border-radius: 5px;
 }
@@ -82,6 +86,11 @@ section {
     gap: 3rem;
 }
 
+section.no-bg {
+    background: none;
+    box-shadow: none;
+}
+
 section img {
     border-radius: 5px;
     box-shadow: 0px 0px 7px 0px #4b1a75;
@@ -97,8 +106,12 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
 
-h1, h2 {
+h1, h2, h3 {
     color: #774eb7;
     font-weight: 400;
 }
@@ -164,6 +177,12 @@ footer a {
 iframe {
     width: 100%;
     height: 515px
+}
+
+.news-date {
+    font-style: italic;
+    margin: 0;
+    color: #776d8a;
 }
 
 /* mobile styles */
