@@ -103,6 +103,11 @@ section.news-item {
     box-sizing: border-box;
 }
 
+section.news-item h3 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
 
 section img {
     border-radius: 5px;
@@ -206,7 +211,8 @@ iframe {
 }
 
 .release-notes-list {
-    column-count: 2
+    column-count: 2;
+    margin-bottom: 2rem;
 }
 .release-notes-list li {
     margin-bottom: 1rem;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
     <title>Mesh2Motion News</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -20,19 +23,25 @@
                         <img src="./images/mesh2motion.svg" style="width: 200px; height: auto" />
                     </a>
                 </li>
-                <li class="mobile-hidden"><a href="index.html#features">Features</a></li>    
-                <li class="mobile-hidden"><a href="index.html#walkthrough">Walkthrough</a></li>              
-                <li class="mobile-hidden"><a class="active" href="news.html">News</a></li> 
-                <li class="mobile-hidden"><a target="_blank" href="https://github.com/scottpetrovic/mesh2motion-app/"><img src="./images/github-white-icon.png" width="20" /> 
-                    Source
-                
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 32 32" class="external-link-icon" aria-label="External Link">
-                        <path fill="white" d="M25.152 16.576v5.696q0 2.144-1.504 3.648T20 27.424H5.152q-2.144.0-3.648-1.504T0 22.272V7.424q0-2.112 1.504-3.616t3.648-1.536h12.576q.224.0.384.16t.16.416V4q0 .256-.16.416t-.384.16H5.152q-1.184.0-2.016.832t-.864 2.016v14.848q0 1.184.864 2.016t2.016.864H20q1.184.0 2.016-.864t.832-2.016v-5.696q0-.256.16-.416t.416-.16h1.152q.256.0.416.16t.16.416zM32 1.152v9.12q0 .48-.352.8t-.8.352-.8-.352l-3.136-3.136-11.648 11.648q-.16.192-.416.192t-.384-.192l-2.048-2.048q-.192-.16-.192-.384t.192-.416L24.064 5.088l-3.136-3.136q-.352-.352-.352-.8t.352-.8.8-.352h9.12q.48.0.8.352t.352.8z"></path>
-                    </svg>
-                
-                </a></li>
+                <li class="mobile-hidden"><a href="index.html#features">Features</a></li>
+                <li class="mobile-hidden"><a href="index.html#walkthrough">Walkthrough</a></li>
+                <li class="mobile-hidden"><a class="active" href="news.html">News</a></li>
+                <li class="mobile-hidden"><a target="_blank"
+                        href="https://github.com/scottpetrovic/mesh2motion-app/">
+                        <img src="./images/github-white-icon.png" width="20" />
+                        Source
+
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 32 32"
+                            class="external-link-icon" aria-label="External Link">
+                            <path fill="white"
+                                d="M25.152 16.576v5.696q0 2.144-1.504 3.648T20 27.424H5.152q-2.144.0-3.648-1.504T0 22.272V7.424q0-2.112 1.504-3.616t3.648-1.536h12.576q.224.0.384.16t.16.416V4q0 .256-.16.416t-.384.16H5.152q-1.184.0-2.016.832t-.864 2.016v14.848q0 1.184.864 2.016t2.016.864H20q1.184.0 2.016-.864t.832-2.016v-5.696q0-.256.16-.416t.416-.16h1.152q.256.0.416.16t.16.416zM32 1.152v9.12q0 .48-.352.8t-.8.352-.8-.352l-3.136-3.136-11.648 11.648q-.16.192-.416.192t-.384-.192l-2.048-2.048q-.192-.16-.192-.384t.192-.416L24.064 5.088l-3.136-3.136q-.352-.352-.352-.8t.352-.8.8-.352h9.12q.48.0.8.352t.352.8z">
+                            </path>
+                        </svg>
+
+                    </a></li>
                 <li class="mobile-hidden" style="flex-grow: 1"></li>
-                <li class="mobile-hidden"><a class="primary-button" href="https://app.mesh2motion.org">Try it out</a></li>
+                <li class="mobile-hidden"><a class="primary-button" href="https://app.mesh2motion.org">Try it out</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -44,45 +53,106 @@
         </section>
 
         <section class="news-item">
+            <h2>Update 2: Weight Paint Previews</h2>
+            <p class="news-date">6/16/2025 | Scott Petrovic</p>
+
+            <p>This release includes numerous improvements and updates to weight painting, skeleton blending, and mesh handling features. There will probably be some fine tuning with the aglorithm, but it now can deal with more extreme deformations.   </p>
+
+
+            <h3>Live Weight Painting Display</h3>
+
+            <div class="release-notes-list">
+                <video controls="controls" style="width: 100%">
+                    <source src="./images/update2/weight-painting-segments.mp4" type="video/mp4">
+                </video>
+                <p>Automatic previews with how bones will be skinned to 3d mesh. Move your bones around and the mesh will update its preview automatically. You can also toggle between this weight painted view and the normal texture view.</p>
+            </div>
+
+
+
+            <h3>Better algorithm for weight blending</h3>
+             <div class="release-notes-list">
+                 <video controls="controls" style="width: 100%;">
+                     <source src="./images/update2/weight-blending.mp4" type="video/mp4">
+                </video>
+                <p>Much improved blend weights for extreme deformations. There are two seperate aglorithms now in the code that take into account these two situations.</p>
+
+             </div>
+
+            <h3>UI Toggles for bone controls</h3>
+            <div class="release-notes-list">
+                <img src="./images/update2/ui-toggles.png"  />
+                 <p>Improved UI toggle for changing between translate and rotate bone. Added UI toggle to change between weight painted model and textured</p>
+
+            </div>
+
+             <h3>Other Release Notes</h3>
+
+            <ul class="release-notes-list">
+                 <li>Bone Positioning: Left click selects bone joints now</li>
+                 <li>Bone Positioning: Disable ability to move the root bone so that stays at origin</li>
+                 <li>3D skeletons: Improved by adding "tip" bones. Three.js needs these to be able to manipulate bone directions</li>
+                 <li>3D Models: Bird and Fox have higher polygon count to help see deformations with blending weights</li>
+            </ul>
+
+
+        </section>
+
+        <section class="news-item">
             <h2>Update 1: Time to Fly!</h2>
             <p class="news-date">5/22/2025 | Scott Petrovic</p>
-            <p>I will try to do these updates to summarize anytime I push out a set of changes. I thought about just slowly pushing stuff out to the site, but that seemed a bit chaotic for some reason. This app will remain in alpha until I decide it is feature complete and stable enough. Then I will move it to Beta. </p>
-                
-            <p>This update focuses on adding a new skeleton type. I do have terrible focus, so it also includes other things. I want to really think about this application from a general rigging standpoint, so I want to think about how every change would affect every rigt type (animal, human, bird, etc). I have more ideas ready to start coding, as well as make a few issues that people have contacted me about for a better experience.</p>
+            <p>I will try to do these updates to summarize anytime I push out a set of changes. I thought about just
+                slowly pushing stuff out to the site, but that seemed a bit chaotic for some reason. This app will
+                remain in alpha until I decide it is feature complete and stable enough. Then I will move it to Beta.
+            </p>
+
+            <p>This update focuses on adding a new skeleton type. I do have terrible focus, so it also includes other
+                things. I want to really think about this application from a general rigging standpoint, so I want to
+                think about how every change would affect every rigt type (animal, human, bird, etc). I have more ideas
+                ready to start coding, as well as make a few issues that people have contacted me about for a better
+                experience.</p>
 
             <iframe src="https://www.youtube.com/embed/Vk7hGRhHcdM"></iframe>
 
             <strong>Release Notes for Update 1</strong>
 
-               <ul class="release-notes-list">
+            <ul class="release-notes-list">
                 <li>Feature: New Bird skeleton type added with a few animations</li>
-                <li>Importing Model: When 3d model is imported, scaling only happens if it is too large or very small</li>
-                <li>Importing Model: New button to move the mesh data above the floor. This happens when the mesh origin is in the model's center.</li>
+                <li>Importing Model: When 3d model is imported, scaling only happens if it is too large or very small
+                </li>
+                <li>Importing Model: New button to move the mesh data above the floor. This happens when the mesh origin
+                    is in the model's center.</li>
                 <li>Importing Model: Fixed Z-rotation when rotating model. It wasn't hooked up before</li>
                 <li>Skinning: Added a debug option to show weight painted model for reference</li>
-                <li>Animation: Keep the hip bone transform data with all skeleton types (previously only worked for humans)</li>
+                <li>Animation: Keep the hip bone transform data with all skeleton types (previously only worked for
+                    humans)</li>
                 <li>Blender 3D Source: More high-poly reference model for fox to help simulate deformations better</li>
                 <li>Blender 3D Source: Added bird model along with separate animation file</li>
                 <li>Blender 3D Source: Make bone naming more consistent across skeleton types</li>
-                <li>Animation List: (Code-only) Allow for appending different sets of animations when viewing listing (Human now has an extra custom YMCA on top of the Quaternius animation data)</li>
+                <li>Animation List: (Code-only) Allow for appending different sets of animations when viewing listing
+                    (Human now has an extra custom YMCA on top of the Quaternius animation data)</li>
                 <li>Animation List: Have animation progress bar with currently playing animation</li>
                 <li>Animation List: Alphabetize animation names to make finding easier</li>
                 <li>Editing Skeleton: Add ability to rotate bones when editing skeleton</li>
                 <li>UX: Show hover effect when mouse is over a joint that will be selected for visual feedback</li>
                 <li>UX: Have skeleton joints and bones keep same size regardless of zoom level</li>
                 <li>UI: Used fixed positioning for header so right click will work at the top of application</li>
-                <li>Performance: Very large speed up for skinning process. This is because of caching and other optimizations</li>
+                <li>Performance: Very large speed up for skinning process. This is because of caching and other
+                    optimizations</li>
             </ul>
 
-            <p>All updates will be applied the next time you visit <a href="https://app.mesh2motion.org/">https://app.mesh2motion.org/</a></p>
+            <p>All updates will be applied the next time you visit <a
+                    href="https://app.mesh2motion.org/">https://app.mesh2motion.org/</a></p>
 
-            
+
         </section>
 
         <section class="news-item">
             <h2>Mesh2Motion Enters the Fight!</h2>
             <p class="news-date">5/11/2025 | Scott Petrovic</p>
-            <p>Hello. This is a news post to represent the original release of the site and application. Updates will be sporadic as I am the only person working on this. I have a bit of a vision with how this will progress, so I probably won't be taking too many external contributors right now. </p>
+            <p>Hello. This is a news post to represent the original release of the site and application. Updates will be
+                sporadic as I am the only person working on this. I have a bit of a vision with how this will progress,
+                so I probably won't be taking too many external contributors right now. </p>
         </section>
 
 
@@ -92,4 +162,5 @@
         <p><a target="_blank" href="https://opensource.org/licenses/MIT">MIT License</a></p>
     </footer>
 </body>
+
 </html>
