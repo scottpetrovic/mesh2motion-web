@@ -53,10 +53,45 @@
         </section>
 
         <section class="news-item">
+            <h2>Update 3: Undo System, Hand variations</h2>
+            <p class="news-date">7/31/2025 | Scott Petrovic</p>
+            <p>Added a few features that I just wanted to get out. I never know when work will consume my time, so it is probably better to have smaller releases more frequently than trying to do large cycle releases.</p>
+
+             <h3>Undo/Redo system</h3>
+            <div class="release-notes-list">
+                <img src="./images/update3/undo-system.png" /  >
+                <p>Moving bones around can be frustrating when there is no undo, so it has been added. This was something I had in the back of my mind when building this, but thought it was kind of a secondary priority at the time.</p>
+                    
+                <p>I scanned my messages recently and noticed a blue circle by the github mailbox. Is this a message for someone giving me a large donation because all my hard work.... no. Alas, it was a bug report. A good one at that. For a person that is mostly isolated in a room all day, even a request or bug report is pleasant to witness. Oh yes, the usual shortcuts like Ctrl+Z work as well.</p>
+            </div>
+
+            
+            <h3>Hand Variations</h3>
+            <div class="release-notes-list">
+                <img src="./images/update3/hand-variations.png" /  >
+                <p>There are SO many finger bones in the human skeleton. Do we really need all of those? My model just has a brick for a hand. </p>
+                <p>That pretty much sums up why this next feature was added. When selecting a human skeleton, there are now a few options with the bones we keep for the hand. Less bones on the hand == smaller file size for the final animations. Less work to position the bones as well. The file size in the output isn't as big as I would have thought, but it is still pretty noticeable.</p>
+            </div>
+
+            <h3>Filter animations list</h3>
+            <div class="release-notes-list">
+                <img src="./images/update3/filter-animations.png" /  >
+                <p>This might be useful when more animations are added. It seemed like a good idea.</p>
+            </div>
+
+            <h3>Next up</h3>
+             <p>Not really sure. I will let this sit for a bit and see if anyone actually uses this. All updates will be applied the next time you visit <a
+                    href="https://app.mesh2motion.org/">https://app.mesh2motion.org/</a>. If you end up using this, rattle some buttons or text on the github page so I know people think this is useful.</p>
+
+
+        </section>  
+
+
+        <section class="news-item">
             <h2>Update 2: Weight Paint Previews</h2>
             <p class="news-date">6/16/2025 | Scott Petrovic</p>
 
-            <p>This release includes numerous improvements and updates to weight painting, skeleton blending, and mesh handling features. There will probably be some fine tuning with the aglorithm, but it now can deal with more extreme deformations.   </p>
+            <p>This release includes numerous improvements and updates to weight painting, skeleton blending, and mesh handling features. There will probably be some fine tuning with the algorithm, but it now can deal with more extreme deformations.   </p>
 
 
             <h3>Live weight painting display</h3>
@@ -75,7 +110,7 @@
                  <video controls="controls" style="width: 100%;">
                      <source src="./images/update2/weight-blending.mp4" type="video/mp4">
                 </video>
-                <p>Much improved blend weights for extreme deformations. There are two seperate aglorithms now in the code that take into account these two situations.</p>
+                <p>Much improved blend weights for extreme deformations. There are two separate algorithms now in the code that take into account these two situations.</p>
 
              </div>
 
@@ -111,7 +146,7 @@
 
             <p>This update focuses on adding a new skeleton type. I do have terrible focus, so it also includes other
                 things. I want to really think about this application from a general rigging standpoint, so I want to
-                think about how every change would affect every rigt type (animal, human, bird, etc). I have more ideas
+                think about how every change would affect every rig type (animal, human, bird, etc). I have more ideas
                 ready to start coding, as well as make a few issues that people have contacted me about for a better
                 experience.</p>
 

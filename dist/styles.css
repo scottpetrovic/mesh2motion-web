@@ -215,6 +215,7 @@ iframe {
 .release-notes-list {
     column-count: 2;
     margin-bottom: 2rem;
+    gap: 3rem;
 }
 .release-notes-list li {
     margin-bottom: 1rem;
