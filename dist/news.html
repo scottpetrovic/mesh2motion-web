@@ -8,8 +8,8 @@
     <title>Mesh2Motion News</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -52,6 +52,67 @@
             <h1 style="margin: 4rem auto; margin-bottom: 0rem;">News</h1>
         </section>
 
+        <!-- start news items here -->
+        <section class="news-item">
+             <h2>Update 4: Video Previews, Theming, Navigation improvements</h2>
+             <p class="news-date">8/14/2025 | Scott Petrovic</p>
+
+             <p>I was feeling productive last week outside of work, so I had a chance to work on some new features for the app. Eventually I will start concentrating more on "content" like the animations, but context switching for me is pretty painful. I will stick on platform features until things are more stable and feature complete enough.</p>
+
+             
+            <h3>Animation video preview</h3>
+            <div class="release-notes-list">
+            <p>I built out a system to bring in GLB files, cycle through each animation, and record them to small video files. This was kind of fun to figure out how to do. It should be easy to regenerate them in the future if there are changes. I had to update the UI a bit to accomodate for these larger animation items. It is all done via a URL. See the preview animatoin readme in the github repository for more information with how it works.</p>
+            <img src="images/update4/animation-preview.png" alt="Animation Preview" />
+            </div>
+
+             
+            <h3>Better navigation between steps</h3>
+            <div class="release-notes-list">
+                <img src="images/update4/navigation-improvement.png" alt="Navigation Improvement" />
+                <p>Each step has a back button if you did something wrong between the steps. I had this on one step before, but now it exists on all the steps. Someone mentioned this on github and I thought it was a good idea. It is probably the most useful if you accidently pick the wrong skeleton type, which I frequently do.</p>
+            </div>
+
+
+             <h3>Dark &amp; light theme toggle</h3>
+            <div class="release-notes-list">
+                <p>While I like dark themes, I occasionally just want a break from everything dark. A new toggle button appears where you can switch the theme. This setting gets saved in a cookie, so it should remember what theme you used last.</p>
+                <img src="images/update4/theming.png" alt="Theme Toggle" />
+            </div>
+             
+             <h3>Animation player</h3>
+             <div class="release-notes-list">
+                <img src="images/update4/animation-player.png" alt="Animation Player" />
+               <p>When you are in the animation listing, there is a mini player at the bottom where you can play/pause the animation, or scrub through it. Not sure how useful it will be, but it seemed like a fun idea.</p>
+             </div>
+
+             <h3>Mini 3d view helper</h3>
+             <div class="release-notes-list">
+                <p>This was something I saw online that three.js added somewhat recently. You can click on the axis and the view will snap to the top, bottom, left, or right views. This is replacing the manual view buttons I had when editing the skeleton.</p>
+                <img src="images/update4/view-helper.png" alt="Mini 3D View Helper" />
+             </div>
+
+            <h3>Other release notes</h3>
+
+            <ul class="release-notes-list">
+                <li>Updated mouse icons making them a bit thinner.</li>
+                <li>Hide the circle joint on the skeleton when you are on the animation listing step. They don't add any value at this point.</li>
+                <li>Turned "show skeleton" option into a toggle icon button.</li>
+                <li>When you enter the animation listing step, the skeleton will be hidden by default.</li>
+                <li>Build number isn't working, so just remove that for now</li>
+                <li>When positioning mesh after importing, do a little animation for the rotation for polish.</li>
+                <li>Display a slightly more friendly name for animation names instead of the snake case names</li>
+                <li>Only show the A-Pose options for humans. This helps convert characters in an A-Pose to a T-Pose which the animations expect.</li>
+                <li>Slight fog effect added to help with transition between floor and background.</li>
+            </ul>
+
+            <h3>Next up...</h3>
+        
+            <p>If I don't get many feature requests. I might start trying to create more animations/skeleton for the tool. They won't be great, but it will be something. You can see my masterful bird test animation that currently exists. I will throw my Venmo account on my github page to potentially collect funds to hire an animator. I am not expecting any funds at this point, so be prepared for my janky animations.</p>
+        
+            </section>
+
+
         <section class="news-item">
             <h2>Update 3: Undo System, Hand variations</h2>
             <p class="news-date">7/31/2025 | Scott Petrovic</p>
@@ -59,10 +120,8 @@
 
              <h3>Undo/Redo system</h3>
             <div class="release-notes-list">
+                <p>Moving bones around can be frustrating when there is no undo, so it has been added. This was something I had in the back of my mind when building this, but thought it was kind of a secondary priority at the time. I scanned my messages recently and noticed a blue circle by the github mailbox. Is this a message for someone giving me a large donation because all my hard work.... no. Alas, it was a bug report. A good one at that. For a person that is mostly isolated in a room all day, even a request or bug report is pleasant to witness. Oh yes, the usual shortcuts like Ctrl+Z work as well.</p>
                 <img src="./images/update3/undo-system.png" /  >
-                <p>Moving bones around can be frustrating when there is no undo, so it has been added. This was something I had in the back of my mind when building this, but thought it was kind of a secondary priority at the time.</p>
-                    
-                <p>I scanned my messages recently and noticed a blue circle by the github mailbox. Is this a message for someone giving me a large donation because all my hard work.... no. Alas, it was a bug report. A good one at that. For a person that is mostly isolated in a room all day, even a request or bug report is pleasant to witness. Oh yes, the usual shortcuts like Ctrl+Z work as well.</p>
             </div>
 
             
@@ -75,8 +134,8 @@
 
             <h3>Filter animations list</h3>
             <div class="release-notes-list">
-                <img src="./images/update3/filter-animations.png" /  >
                 <p>This might be useful when more animations are added. It seemed like a good idea.</p>
+                <img src="./images/update3/filter-animations.png" /  >
             </div>
 
             <h3>Next up</h3>
@@ -192,8 +251,6 @@
                 sporadic as I am the only person working on this. I have a bit of a vision with how this will progress,
                 so I probably won't be taking too many external contributors right now. </p>
         </section>
-
-
 
     </main>
     <footer>

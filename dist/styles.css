@@ -1,10 +1,14 @@
 * {
     font-family: 'Jost', Arial, Helvetica, sans-serif;
     font-size: 1.05rem;
+    line-height: 150%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Newsreader', Arial, Helvetica, sans-serif
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -86,7 +90,7 @@ section {
     margin-top: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 1056px;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -109,6 +113,12 @@ section.news-item h3 {
     margin-bottom: 1rem;
 }
 
+section.news-item img {
+    transition: transform 0.3s ease;
+}
+section.news-item img:hover {
+    transform: scale(1.25);
+}
 
 section img {
     border-radius: 5px;
@@ -125,6 +135,7 @@ section span {
     padding: 0 4rem;
 }
 
+
 h1 {
     font-size: 3.3rem;
 }
@@ -132,7 +143,7 @@ h2 {
     font-size: 2.8rem;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     margin-bottom: 0;
 }
 
