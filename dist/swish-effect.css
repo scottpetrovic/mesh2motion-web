@@ -1,0 +1,29 @@
+/* Swish effect behind images */
+.img-swish-wrap {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    margin: 2em 0;
+}
+
+.img-swish-wrap img {
+    position: relative;
+    z-index: 2;
+    box-shadow: 1px 10px 32px 0 rgba(80, 0, 120, 0.25), 0 1.5px 8px 0 rgb(0 0 0 / 42%);
+}
+
+.img-swish-wrap::before {
+    content: '';
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    width: 106%;
+    height: 134%;
+    transform: translate(-42%, -50%) rotate(191deg);
+    z-index: 1;
+    background: radial-gradient(circle at 96% 40%, #ffb6ff 0%, #7f9cff 27%, #2B2D41 100%);
+    opacity: 0.85;
+    filter: blur(36px) saturate(2.2);
+    border-radius: 64% 40% 19% 40% / 40% 33% 40% 60%;
+}
+

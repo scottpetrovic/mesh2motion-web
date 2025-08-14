@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
 
+
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="swish-effect.css">
 
 </head>
 <body>
@@ -17,7 +19,7 @@
         <nav>
             <ul>
                 <li>
-                    <a class="image-link" href="#">
+                    <a class="image-link" href="index.html">
                         <img src="./images/mesh2motion.svg" style="width: 200px; height: auto" />
                     </a>
                 </li>
@@ -61,7 +63,9 @@
         <section id="features-2">
 
                 <span>
-                    <img src="./images/animal-example.png" alt="Screenshot of the application" />
+                    <div class="img-swish-wrap">
+                        <img src="./images/animal-example.png" alt="Screenshot of the application" />
+                    </div>
                 </span>
 
                 <span>
@@ -87,16 +91,20 @@
                 </ul>
             </span>
 
+
             <span>
-                <img src="./images/human-animations-list.png" alt="Screenshot of the application" />
+                <div class="img-swish-wrap">
+                    <img src="./images/human-animations-list.png" alt="Screenshot of the application" />
+                </div>
             </span>
 
 
         </section>
 
 
-        <section id="walkthrough" style="flex-direction: column; gap: 0; align-items: center">
-            <h2>Video Walkthrough</h2>   
+         <h2 id="walkthrough">Video Walkthrough</h2>  
+
+        <section  style="padding: 0; margin: 0;">            
             <iframe src="https://www.youtube.com/embed/pDUxgNgBhTQ"></iframe>
         </section>  
 
