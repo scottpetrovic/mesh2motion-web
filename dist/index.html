@@ -38,19 +38,24 @@
         </nav>
     </header>
     <main>
-        <div style="background: url('./images/human-screenshot.png'); background-size: cover; background-position: center; height: 600px; width: 100%; position: relative; z-index: -1">
-            <div style="height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
 
-            <section id="hero">            
-                <h3>Bring Your 3D Models to Life</h3>
-                <p>A FREE & open-source web application that allows you to animate your 3D models. Animate both humanoid and four-legged creatures.</p>
-            </section>
+        <div class="hero-video-container">
+            <video class="hero-video-bg" autoplay muted loop playsinline preload="auto" poster="videos/hero.jpg">
+                <source src="videos/hero.webm" type="video/webm">
+                Your browser does not support HTML5 WebM video.
+            </video>
+            <div class="hero-video-overlay"></div>
+            <div class="hero-overlay-text">
+                <h1>Bring Your 3D Models to Life</h1>
+                <p><em>Mesh2Motion</em> is a FREE & open-source web application to animate your 3D models. <br/>Supports humanoid, four-legged, and bird  creatures.</p>
 
+                <a class="primary-button" href="https://app.mesh2motion.org">Try it out</a>
+            </div>
         </div>
 
-        <section id="features" style="flex-direction: column; gap: 0; align-items: center">
-            <h2>Features</h2>
-        </section>
+
+        <!-- actually saying "features" might be a bit too 'on the nose' -->
+        <section id="features" style="flex-direction: column; gap: 0; align-items: center; visibility: hidden;"></section>
 
 
         <section id="features-2">
@@ -60,11 +65,12 @@
                 </span>
 
                 <span>
-                    <h3>Human & Animal rigs</h3>
+                    <h3>🥳 Human & Animal rigs</h3>
                     <ul>
                         <li>Supports importing GLB, GLTF, and FBX models</li>
                         <li>Human and animal skeleton options</li>
                         <li>Intuitive skeleton positioning</li>
+                        <li>Undo/Redo system when you make mistakes</li>
                     </ul>  
                 </span>
    
@@ -73,11 +79,11 @@
         <section id="features-3">
            
             <span>
-                <h3>Export Animations</h3>
+                <h3>✔️ Export Animations</h3>
                 <ul>
-                    <li>T-Pose and A-Pose models supported workflows</li>
-                    <li>Animations provided (free human animation library from <a href="https://quaternius.com/">Quaternius</a>)</li>
-                    <li>Choose multiple animations to export for web or game engines with GLB</li>
+                    <li>Export multiple animations at once</li>
+                    <li>Widely supported GLB format</li>
+                    <li>Human animation library from <a href="https://quaternius.com/" target="_blank">Quaternius</a></li>
                 </ul>
             </span>
 
