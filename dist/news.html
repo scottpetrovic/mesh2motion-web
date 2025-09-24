@@ -58,7 +58,7 @@
 
             <p>This release is light on new features, but has a lot of improvements that improve the overall user experience. Most of these organizational changes and improvements won't be visible when using the application.</p>
 
-            <p>I'm starting to build guides for animator contributions. If you take a look at the GitHub repository, you can see the the state it is in now. I am also working with a couple animators with how to structure the rigs and animations. Rigging characters technically complicated. I read a book on rigging game characters recently, but still have a lot to learn.</p>
+            <p>I'm starting to build guides for animator contributions. If you take a look at the GitHub repository, you can see the the state it is in now. I am also working with a couple animators with how to structure the rigs and animations. Rigging characters can get very technical. I read a book on rigging game characters recently, but still have a lot to learn.</p>
 
             <h3>✨ New Dragon rig</h3>
              <div class="release-notes-list">
@@ -73,7 +73,7 @@
             </div>
   
             <h3>✨ Improved 3d import options</h3>
-            <p>Previously the GLTF import wasn't working. This is because GLTF files themselves are mostly just configuration files that reference other files. To make this work, the upload model now supports ZIP format for bundled models. GLTF files need to be zipped up and include GLTF+BIN+textures. GLTF files by themselves isn't enough to import.</p>
+            <p>Previously the GLTF import wasn't working. This is because GLTF files themselves are mostly just configuration files that reference other files. To make this work, the upload model now supports ZIP format for bundled models. GLTF files need to be zipped up and include GLTF+BIN+textures. GLTF files by themselves isn't enough to import. I added some error handling as well if the import fails. There will probably be some error situations I am not catching depending on what people do.</p>
                 
             <p>I also added the ability to import a new 3d model format DAE. Similar to GLTF, this also needs to be grouped together in a ZIP file so all the data is loaded in together. I tried it out on a couple models and it seemed to work, so I will need some feedback to see if there is more to do with this.</p>
 
@@ -98,7 +98,7 @@
                 <li>Blender source files. Have a Blender python script that combines all animations into a single GLB file for the app</li>
                 <li>Update skinning algorithm to have smoothing applied where joints bend using 'adjaceny map'. Not sure if this will be better or not.</li>
                 <li>Add a few more animations for bird rig</li>
-                <li>Show indicator by download to see how many animations will be included</li>
+                <li>Show indicator in download button to see how many animations will be included</li>
               </ul>
 
                <h3>Next up...</h3>
