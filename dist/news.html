@@ -52,6 +52,61 @@
             <h1 style="margin: 4rem auto; margin-bottom: 0rem;">News</h1>
         </section>
 
+         <section class="news-item">
+            <h2 id="update5">Update 5: Unleash the Dragon</h2>
+            <p class="news-date">9/24/2025 | Scott Petrovic</p>
+
+            <p>This release is light on new features, but has a lot of improvements that improve the overall user experience. Most of these organizational changes and improvements won't be visible when using the application.</p>
+
+            <p>I'm starting to build guides for animator contributions. If you take a look at the GitHub repository, you can see the the state it is in now. I am also working with a couple animators with how to structure the rigs and animations. Rigging characters technically complicated. I read a book on rigging game characters recently, but still have a lot to learn.</p>
+
+            <h3>✨ New Dragon rig</h3>
+             <div class="release-notes-list">
+                 <p>Added a few animations to get started. Current animations are coming from me so they won't be too good until a real animator steps in. New option is  available for the model and skeleton to use the dragon rig.</p>
+                 <img src="images/update5/dragon-rig.png" alt="Dragon Rig" />
+             </div>
+
+            <h3>✨ Sliders for skeleton scale and A-Pose correction</h3>
+            <div class="release-notes-list">
+                <img src="images/update5/skeleton-slider.png" alt="Sliders for Skeleton Scale and A-Pose Correction" />
+                <p>Added sliders for skeleton scale and A-Pose correction (Nathan Fenner) to improve the rigging process. This should be a little easier than selecting numeric values and hitting the apply button multiple times.</p>
+            </div>
+  
+            <h3>✨ Improved 3d import options</h3>
+            <p>Previously the GLTF import wasn't working. This is because GLTF files themselves are mostly just configuration files that reference other files. To make this work, the upload model now supports ZIP format for bundled models. GLTF files need to be zipped up and include GLTF+BIN+textures. GLTF files by themselves isn't enough to import.</p>
+                
+            <p>I also added the ability to import a new 3d model format DAE. Similar to GLTF, this also needs to be grouped together in a ZIP file so all the data is loaded in together. I tried it out on a couple models and it seemed to work, so I will need some feedback to see if there is more to do with this.</p>
+
+            <h3>Other release notes</h3>
+
+              <ul class="release-notes-list">
+                <li>Added mouths to all the animal rigs</li>
+                <li>Added Docker file and instructions for easy deployment (eternity336)</li>
+                <li>Add <a target="_blank" href="https://github.com/scottpetrovic/mesh2motion-app/blob/main/static/MODELER-README.md">Modeler readme</a> for modelers to github repository</li>
+                <li>Add <a target="_blank" href="https://github.com/scottpetrovic/mesh2motion-app/blob/main/static/ANIMATOR-README.md">Animator readme</a> file for animating to github repository</li>
+                <li>Make the floor plane one sided in the scene so you can see model from below</li>
+                <li>Show count of filtered animations when filtering list</li>
+                <li>When using animation player, pause the animation while scrubbing (Nathan Fenner)</li>
+                <li>Update Cloudflare configuration (wrangler.jsonc) to use new worker configuration</li>
+                <li>Show origin marker when loading 3d files to help with troubleshooting positioning</li>
+                <li>Force people to select skeleton type before proceeding. This helps with making the mistake of continuing with the wrong skeleton</li>
+                <li>Fix loading animation previews if you go back and change skeleton type after finishing</li>
+                <li>Show messaging when there are no animations available after filtering listing</li>
+                <li>Start adding attribution link for contributors at the top. A dialog appears that will show contributions.</li>
+                <li>Improve tooltip display using tippy.js library</li>
+                <li>Blender source files. Use library overrides pattern to have separate blender files for each animation. This required a files and folders to be re-organized</li>
+                <li>Blender source files. Have a Blender python script that combines all animations into a single GLB file for the app</li>
+                <li>Update skinning algorithm to have smoothing applied where joints bend using 'adjaceny map'. Not sure if this will be better or not.</li>
+                <li>Add a few more animations for bird rig</li>
+                <li>Show indicator by download to see how many animations will be included</li>
+              </ul>
+
+               <h3>Next up...</h3>
+               <p>I need to figure out a better way for animators to download rigs, do some animations, and upload their work back to the project. Github might be the best way for me technically, but not sure if that will be too complicated for 3d animators. If this is something you could help with, let me know!</p>
+
+
+         </section>
+
         <!-- start news items here -->
         <section class="news-item">
              <h2>Update 4: Video Previews, Theming, Navigation improvements</h2>
