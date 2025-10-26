@@ -135,10 +135,9 @@ section.news-item h3, h3 {
     background: #332c48;
     padding: 1rem;
     border-radius: 10px;
-
     background: #529da1;
     background: linear-gradient(270deg,rgba(82, 157, 161, 0) 0%, rgba(77, 97, 168, 0.52) 100%);
-
+    width: 100%;
 }
 
 
@@ -251,6 +250,9 @@ iframe {
 .release-notes-list li {
     margin-bottom: 1rem;
     padding-right: 3rem;
+}
+.release-notes-list video {
+    max-width: 100%;
 }
 
 /* mobile styles */

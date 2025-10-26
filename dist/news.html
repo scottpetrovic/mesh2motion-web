@@ -52,6 +52,48 @@
             <h1 style="margin: 4rem auto; margin-bottom: 0rem;">News</h1>
         </section>
 
+        <section class="news-item">
+            <h2 id="update6">Update 6: Explore Library</h2>
+            <p class="news-date">10/26/2025 | Scott Petrovic</p>
+
+            <p>The biggest change is the new explore page where you can quickly change between skeletons and see all the available animations. This is now the default page when you visit the application. Previously you had to manually configure a rig before seeing the animations. For quick testing and trying out the application, this is a much better experience. You can always switch to the Create page if you want to import your own 3d model and hook that up.</p>
+
+            <p>A lot of energy and time went into creating new control rigs for all the skeletons. I spent a lot of time reading and watching video tutorials. A big thank you to <a href="https://www.youtube.com/@richstubbsanimation" target="_blank">Rich Stubbs Youtube channel</a>. This helped me understand how to create more advanced rigs. There are more improvements that could be made for the rigs, but it is much better than what was previously there. This work won't be obvious looking at the application, but will make animations easier when the library gets built out more. More bones were added in a few spots as well to make deformations better such as the wings in the bird. There were also mouths added for the bird, dragon, and quadruped rigs to be more expressive.</p>
+
+
+            <h3>✨ Explore animations page</h3>
+            <div class="release-notes-list">
+                <img src="images/update6/explore-page.png" alt="Screenshot showing the page interface with animation previews" />
+                <p>Quickly preview and switch between skeletons to see all available animations. This makes it much easier to try out the application without having to import your own 3d model first. This is now the default landing page when you visit the application. </p>
+            </div>
+
+            <h3>✨ New control rigs</h3>
+              <div class="release-notes-list">
+                <video autoplay loop muted>
+                  <source src="images/update6/control-rig.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <p>New control rig for all Blender skeletons. Control rigs are Blender 2.5 source files that are used to create the animations. This is using a slightly more advanced skeleton structure where there are deformation bones and "driver" bones which are animated. This separation of bones allow for more flexibility when setting up IK controls and bone constraints to improve the overall animation process. This will allow better animations in the future.</p>
+              </div>
+
+            <h3>Other release notes</h3>
+
+            <ul class="release-notes-list">
+                <li>Add a bit of floor transparency for animations that go below floor</li>
+                <li>Add contribution guide from Contribution page for instructions on how to contribute.</li>
+                <li>Add a transform space toggle from world to local when rotating bones</li>
+                <li>Fix a small typo with how to spell Quaternius in contribution guide</li>
+                <li>Added some new quadruped/fox animations to the library using new control rig.</li>
+                <li>Replaced the human custom animation with a new custom tired animation using new control rig.</li>
+                <li>Added stomach bone for quadruped and dragon rig to help preserve volume during animations.</li>
+                <li>Add a bit more range to the human A-Pose slider for better T-pose correction.</li>
+            </ul>
+
+             <h3>Next up...</h3>
+            <p>Maybe I will spend some time creating animations and build out the library more. Or possibly fix some bugs depending on what type of feedback I get. If there are animators interested in contributing, I might spend some time making a Youtube walkthrough with how to create animations and submit them.</p>
+
+        </section>
+
          <section class="news-item">
             <h2 id="update5">Update 5: Unleash the Dragon</h2>
             <p class="news-date">9/24/2025 | Scott Petrovic</p>
@@ -62,7 +104,7 @@
 
             <h3>✨ New Dragon rig</h3>
              <div class="release-notes-list">
-                 <p>Added a few animations to get started. Current animations are coming from me so they won't be too good until a real animator steps in. New option is  available for the model and skeleton to use the dragon rig.</p>
+                 <p>Added a few animations to get started. Current animations are coming from me so they won't be too good until a real animator steps in. New option is available for the model and skeleton to use the dragon rig.</p>
                  <img src="images/update5/dragon-rig.png" alt="Dragon Rig" />
              </div>
 
@@ -107,12 +149,11 @@
 
          </section>
 
-        <!-- start news items here -->
         <section class="news-item">
-             <h2>Update 4: Video Previews, Theming, Navigation improvements</h2>
+             <h2 id="update4">Update 4: Video Previews, Theming, Navigation improvements</h2>
              <p class="news-date">8/14/2025 | Scott Petrovic</p>
 
-             <p>I was feeling productive last week outside of work, so I had a chance to work on some new features for the app. Eventually I will start concentrating more on "content" like the animations, but context switching for me is pretty painful. I will stick on platform features until things are more stable and feature complete enough.</p>
+             <p>I was feeling productive last week outside of work, so I had a chance to work on some new features for the app. Eventually I will start concentrating more on "content" like the animations, but context switching for me is pretty painful. I will stick on platform features until things are more stable and complete enough.</p>
 
              
             <h3>✨ Animation video preview</h3>
@@ -165,11 +206,11 @@
         
             <p>If I don't get many feature requests. I might start trying to create more animations/skeleton for the tool. They won't be great, but it will be something. You can see my masterful bird test animation that currently exists. I will throw my Venmo account on my GitHub page to potentially collect funds to hire an animator. I am not expecting any funds at this point, so be prepared for my janky animations.</p>
         
-            </section>
+        </section>
 
 
         <section class="news-item">
-            <h2>Update 3: Undo System, Hand variations</h2>
+            <h2 id="update3">Update 3: Undo System, Hand variations</h2>
             <p class="news-date">7/31/2025 | Scott Petrovic</p>
             <p>Added a few features that I just wanted to get out. I never know when work will consume my time, so it is probably better to have smaller releases more frequently than trying to do large cycle releases.</p>
 
@@ -202,7 +243,7 @@
 
 
         <section class="news-item">
-            <h2>Update 2: Weight Paint Previews</h2>
+            <h2 id="update2">Update 2: Weight Paint Previews</h2>
             <p class="news-date">6/16/2025 | Scott Petrovic</p>
 
             <p>This release includes numerous improvements and updates to weight painting, skeleton blending, and mesh handling features. There will probably be some fine tuning with the algorithm, but it now can deal with more extreme deformations.   </p>
@@ -251,7 +292,7 @@
         </section>
 
         <section class="news-item">
-            <h2>Update 1: Time to Fly!</h2>
+            <h2 id="update1">Update 1: Time to Fly!</h2>
             <p class="news-date">5/22/2025 | Scott Petrovic</p>
             <p>I will try to do these updates to summarize anytime I push out a set of changes. I thought about just
                 slowly pushing stuff out to the site, but that seemed a bit chaotic for some reason. This app will
