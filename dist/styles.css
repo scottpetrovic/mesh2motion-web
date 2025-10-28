@@ -21,6 +21,12 @@ h1, h2, h3, h4 {
     font-family: 'Jost', Arial, Helvetica, sans-serif
 }
 
+h4 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
