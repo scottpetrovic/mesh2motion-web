@@ -45,6 +45,107 @@
             <h1 style="margin: 4rem auto; margin-bottom: 0rem;">News</h1>
         </section>
 
+
+ 
+        <section class="news-item">
+            <h2 id="update7">Update 7: Root Motion, Mirroring, New Animations</h2>
+            <p class="news-date">11/18/2025 | Scott Petrovic</p>
+
+            <p>There is a balancing act that happens every development cycle with doing code related features, fixes, and creating animations. While the Mesh2Motion platform still needs work with better rigging features, I understand that people also want more animations as well. As a one-person team, I have to prioritize the biggest pain points I hear about from social media without getting burnt out. This means releases will be small. This is still just a hobby project I work on in my free time.</p>
+
+            <p>I have been learning more about how to make animations using Blender with video tutorials. A nice feature I have been starting to use recently is the "motion paths" for an animation. This is shown in the skeleton tab in Blender's property area. It does a great job communicating two things: how smooth the animation paths are  with showing the arcs, how evenly spaced keyframes are to have smooth animations.  I would still not consider myself an animator, but am getting more comfortable with the workflow that Blender provides. If a professional animator comes by and wants to give me any pointers, I would welcome the advice. </p>
+
+            <p>Finally, if you want to see this project grow and give me more motivation, consider giving a small tip. With this project, or any open source project, you would be surprised the positive energy that is transferred to the person working on it. I just added Stripe integration recently with a number of options as well as a Venmo option for USA peeps.</p>
+
+            <p>
+                <a class="primary-button" target="_blank" href="https://support.mesh2motion.org"> ❤️ Support the project</a>
+            </p>
+
+            <h3>✨ Root motion support</h3>
+            <div class="release-notes-list">
+                <img src="images/update7/root-motion.png" alt="Root motion example" />
+                <p>Root motion supported for animations. If an animation has a "RM" at the end, root position keyframes can be changed. Only one animation exists now in the app to start as a proof of concept. This will work for all skeleton types.</p>
+            </div>
+
+            <h3>✨ Mirror animations</h3>
+            <div class="release-notes-list">
+                <p>On the animation listing step, there is an option to mirror the animations. All animations are affected for now so you cannot cherry pick which animations you want mirrored. Long term I want to give each animation more options to control this. The initial goal was to get the code logic needed to do the mirroring.</p>
+                <img src="images/update7/mirror-animation.png" alt="Mirror animation example" />
+            </div>
+
+            <h3>✨ Head/body separation option</h3>
+            <div class="release-notes-list">
+                <img src="images/update7/head-plane.png" alt="Chibi head example" />
+                <p>When editing the skeleton, there is now an option to separate the head from the body for human skeletons. This is useful for chibi style characters where the head is much larger than normal. There are more situations this tool doesn't handle such as long hair behind the model's back. I might improve this feature in the future to be more flexible instead of a simple plane control.</p>
+            </div>
+
+            <h3>✨ New animations</h3>
+
+            <p>I haven't been very explicit with how you can use all these animations. Everything art related (3d models, animations) are CC0. This means you can use it for anything personal or commercial. You can remix, modify, or improve any of the content I have. I updated the Github repository with a bit more information around this in the license area.</p>
+
+            <p>I am starting to spend more time making animations as well. As I get better at animations I will probably come back to some of these, but they seemed alright for now. These are the new animations added for this release:</p>
+
+            <div class="release-notes-list" style="margin-top: 2rem;">
+                
+                <h4 style="margin-top: 0">Fox animations added:</h4>
+                <ul>
+                    <li>Fall</li>
+                    <li>Idle Alert</li>
+                    <li>Jump</li>
+                    <li>Bark</li>
+                </ul>
+
+                <h4>Human animations added:</h4>
+                <ul>
+                    <li>Angry</li>
+                    <li>Bow</li>
+                    <li>Confused</li>
+                    <li>Consume Power up</li>
+                    <li>Crawl</li>
+                    <li>Crawl RM (root motion)</li>
+                    <li>Dance Body Roll</li>
+                    <li>Dance Charleston</li>
+                    <li>Dance Reach Hip</li>
+                    <li>Defend</li>
+                    <li>Head Nod</li>
+                    <li>Idle Listening</li>
+                    <li>Meditate</li>
+                    <li>Power up</li>
+                    <li>Reject</li>
+                    <li>Run anime</li>
+                    <li>Tired Hunched</li>
+                    <li>Tired Kneeling</li>
+                    <li>Throw Ball</li>
+                    <li>Victory</li>
+                </ul>
+            </div>
+
+
+
+            <h3>Other release notes</h3>
+            <ul class="release-notes-list">
+               
+                <li>Added Progress loader when loading all the animations since the file size will start getting larger</li>
+                <li>Better bone selection by taking the camera zoom level into account.</li>
+                <li>Fix for dragon rig in the head area that was caused by a bone roll rotation issue</li>
+                <li>Removed extra neck bone on human rig to give better default results. </li>
+                <li>Added reset buttons for A-Pose and skeleton scale for better UX</li>
+                <li>Explore page uses a different camera angle to better show off perspective</li>
+                <li>Expand camera zooming range to help working with smaller and larger model files</li>
+                <li>Change slider value range to allow skeleton scale to shrink more</li>
+                <li>Validate FBX loading to verify broken images and replace with default material. A message is shown if a broken image is found</li>
+                <li>Reset scale to 1.0 when importing model to normalize import process better</li>
+                <li>Show the GIT commit hash on the bottom left to know what version is released. This is specific to how Cloudflare works, so it probably won't work if you host it yourself using something else.</li>
+                <li>Added support link to top navigation in case people want to support project using Stripe platform</li>
+                <li>Platform tech upgrades: Node v24.11, three.js v181, Vite 7.2</li>
+            </ul>
+
+
+        </section>
+
+
+
+
         <section class="news-item">
             <h2 id="update6">Update 6: Explore Library</h2>
             <p class="news-date">10/26/2025 | Scott Petrovic</p>
