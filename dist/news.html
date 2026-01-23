@@ -46,25 +46,43 @@
         </section>
 
         <section class="news-item">
-            <h2 id="update8">Update 8: Import Rigged Meshes</h2>
-            <p class="news-date">1/13/2026 | Scott Petrovic</p>
+            <h2 id="update8">Update 8: Kaiju & Import Rigged Meshes</h2>
+            <p class="news-date">1/22/2026 | Scott Petrovic</p>
+
+            <h3>✨ New Kaiju Rig</h3>
+            <img src="images/update8/kaiju-rig.png" alt="Kaiju Rig" />
+
+            <p>I thought this would be fun to do. I have a deep love for kaiju movies and wanted to create a rig with this. Comes with 10 animations:</p>
+            <ul>
+                <li>Attack</li>
+                <li>Death</li>
+                <li>Hit</li>
+                <li>Idle</li>
+                <li>Roar</li>
+                <li>Swim</li>
+                <li>T-Pose</li>
+                <li>Tail Attack</li>
+                <li>Walk</li>
+                <li>Walk Root motion</li>
+            </ul>
+
 
             <h3>✨ Upload Your Rigged Mesh (Experimental)</h3>
           
-                <img src="images/update8/retarget.png" alt="Upload Rigged Mesh" />
+            <img src="images/update8/retarget.png" alt="Upload Rigged Mesh" />
 
-                <div style="column-count: 2; margin-top: 2rem;">
-                    <p>Upload an already rigged mesh to use the Mesh2Motion animations. This is a large feature that is still a work in progress. I have been working on it for the past two months. I want to push out the current state to see if people even use this before developing it more. There are two main use cases I could find for this: </p>
+            <div style="column-count: 2; margin-top: 2rem;">
+                <p>Upload an already rigged mesh to use the Mesh2Motion animations. This is a large feature that is still a work in progress. I have been working on it for the past two months. I want to push out the current state to see if people even use this before developing it more. There are two main use cases I could find for this: </p>
 
-                    <ol>
-                        <li>You have a custom model where the Mesh2Motion web rigger cannot handle well. You want the animations, but you are a 3d person that wants control over the weight painting in your 3d tool. For this, people can use the Blender rig linked and do all the custom weight painting.</li>
-                        <li>People have rigged meshes that use other bone structures or naming. This could be from other tools that do rig generation and have the vertices assigned to the bones already.</li>
-                    </ol>
+                <ol>
+                    <li>You have a custom model where the Mesh2Motion web rigger cannot handle well. You want the animations, but you are a 3d person that wants control over the weight painting in your 3d tool. For this, people can use the Blender rig linked and do all the custom weight painting.</li>
+                    <li>People have rigged meshes that use other bone structures or naming. This could be from other tools that do rig generation and have the vertices assigned to the bones already.</li>
+                </ol>
 
-                    <p>The second use case with alternate bone names is where the feature gets complex. There are two main areas to think about when working with alternative bone structures. There is bone mapping, and bone roll. Bone mapping can be done manually, by assigning one named bone to another. Common mappings can use a template to go from one bone format to another.</p>
+                <p>The second use case with alternate bone names is where the feature gets complex. There are two main areas to think about when working with alternative bone structures. There is bone mapping, and bone roll. Bone mapping can be done manually, by assigning one named bone to another. Common mappings can use a template to go from one bone format to another.</p>
 
-                    <p>The "bone roll" correction is often needed in addition to the bone map process. Even if two bones look the same, one could be rotated differently along the axis that pierces through the ends. If this orientation is different, all the rotation data is going to be wrong. A new contributor (Sketchpunklabs) <a href="https://sketchpunklabs.github.io/threejs_proto/code/webgl/anim/002_retarget.html">provided an algorithm/example to accomplish this</a>. This was extremely helpful.</p>
-                </div>
+                <p>The "bone roll" correction is often needed in addition to the bone map process. Even if two bones look the same, one could be rotated differently along the axis that pierces through the ends. If this orientation is different, all the rotation data is going to be wrong. A new contributor (Sketchpunklabs) <a href="https://sketchpunklabs.github.io/threejs_proto/code/webgl/anim/002_retarget.html">provided an algorithm/example to accomplish this</a>. This was extremely helpful.</p>
+            </div>
  
 
 
@@ -72,8 +90,10 @@
 
             <h3>Other release notes</h3>
             <ul class="release-notes-list">
+                <li>13 New Human animations: Backflip, Dizzy, fighting idle, fighting left and right jab, flying forward, flying two-hand forward, jumping jacks, levitate entrance, levitate idle, pushup, sleeping, throw object</li>
                 <li>Fixed iOS bug that wouldn't allow uploading 3d file formats</li>
                 <li>Add support for meshes that store attributes in interleaved format</li>
+                <li>Fix potential memory leak when weight paint re-generation happens</li>
                 <li>Make page titles consistent</li>
                 <li>Tried making page names a bit more descriptive with their use case</li>
             </ul>
