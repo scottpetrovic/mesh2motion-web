@@ -46,6 +46,34 @@
         </section>
 
         <section class="news-item">
+            <h2>Update 9: Import Custom Animations</h2>
+            <div class="news-date">3/4/2026 | Scott Petrovic</div>
+            
+            <h3>✨ Import custom animations</h3>
+            <img src="images/update9/import-custom-animations.jpg" alt="Import custom animations" />
+            <p>One issue that I had was tring to tell animators how to test their Blender animations in the Mesh2Motion app. There was no easy way without pulling down the source code and manually loading in their animation file. Now the workflow is much easier. Much faster and easier verification before they might submit their animations to be included.</p>
+
+            <p>This could also have a secondary benefit to allow people to make animation packs they could provide for free, or sell, or sites like gumroad. People could spend a bit of money and download a GLB file with animations. Those custom animations could then be imported into Mesh2Motion and used with the auto-rigging and default animations.</p>
+
+            <h3>Other release notes</h3>
+            <ul class="release-notes-list">
+                <li>Added a number of Quatnerius animations from his latest pack for the human rig.</li>
+                <li>Handle meshes with multiple materials on import. Previously there were errors when a mesh had multiple materials causing silent errors.</li>
+                <li>Retargeting: Fix animation data slowly getting messed up during retargeting process and export.</li>
+                <li>Retargeting: Make sure at least one bone mapping is done before allowing retargeting.</li>
+                <li>Retargeting: Shorten name for retargeting naming to "RT" to simplify names.</li>
+                <li>Move the toggle bone display to the player since import button expanded the tools area too much.</li>
+                <li>Updated human rig bones and animations to reflect new simplified bone naming.</li>
+                <li>Add contributor page to Github repository for better visiblity. </li>
+                <li>Improve tooltip visuals and instructions for download button</li>
+                <li>Minor styling for back buttons in process to help visual flow.</li>
+                <li>Upgrade three.js code library to 182</li>
+                <li>Clean up dragon bones in skeleton file to only include "deform" bones</li>
+            </ul>   
+
+        </section>
+
+        <section class="news-item">
             <h2 id="update8">Update 8: Kaiju & Import Rigged Meshes</h2>
             <p class="news-date">1/22/2026 | Scott Petrovic</p>
 
