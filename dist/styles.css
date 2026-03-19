@@ -261,11 +261,14 @@ footer a {
     cursor: pointer;
     text-decoration: none;
     box-shadow: 3px 3px 3px #2d090933;
+    transition: transform 0.3s ease, background 0.3s ease;
+    transform: scale(1);
 }
 
 .primary-button:hover {
     background: #42a9c9;
     background: linear-gradient(180deg, rgba(48, 135, 217, 1) 0%, rgba(66, 169, 201, 1) 100%);
+    transform: scale(1.1);
 }
 
 #hero {
@@ -308,7 +311,7 @@ iframe {
 
 .tag {
     font-weight: 300;
-    border: 1px solid #ffffff38;
+    border: 1px solid #6898fff0;
     padding: 0.25rem 0.5rem;
     font-size: 80%;
     border-radius: 0.5rem;
