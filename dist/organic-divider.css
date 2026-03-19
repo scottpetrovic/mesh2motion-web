@@ -1,0 +1,39 @@
+/* Organic section divider styles for the long-form content sections */
+.organic-divider {
+    height: 28px;
+    border: 0;
+    margin: 0.75rem auto 1.5rem;
+    position: relative;
+}
+
+.organic-divider::before,
+.organic-divider::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-top-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.82);
+    border-radius: 999px;
+    pointer-events: none;
+}
+
+.organic-divider::before {
+    top: 10px;
+    border-top-width: 2px;
+    transform: rotate(-0.5deg);
+}
+
+.organic-divider::after {
+    top: 9px;
+    border-top-width: 3px;
+    border-top-color: rgb(30 230 247);
+    transform: rotate(1deg);
+}
+
+@media (max-width: 1000px) {
+    .organic-divider {
+        width: min(600px, 92%);
+        margin: 0.5rem auto 1.25rem;
+    }
+}

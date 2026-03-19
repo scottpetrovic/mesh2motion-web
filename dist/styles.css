@@ -119,7 +119,7 @@ main {
 
 section {
     background-color: var(--bg-alternate);
-    padding: 3em;
+    padding: 5em;
     margin-top: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -142,17 +142,29 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box; /* helps with mobile sizing with smaller screen  */
+}
+
+section.no-bg {
+    flex-direction: column; 
+    gap: 0.5rem; 
+    align-items: center; 
+    background: none; 
+    box-shadow: none;
 }
 
 section.feature {
     max-width: 90rem;
     min-height: 30rem;
+    background: linear-gradient(177deg, #2b2d40, #1e1f2d);
 }
 
 section.feature h3 {
     background: none;
     padding: 0;
     margin: 0;
+    color: #b4eff5;
+    font-family: "Nanum Myeongjo", serif;
 }
 
 section.no-bg {
@@ -302,9 +314,41 @@ iframe {
     border-radius: 0.5rem;
 }
 
+.feature-image-bg {
+    min-height: 27rem;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 50%; 
+    height: auto;
+}
+
 /* mobile styles */
 
 @media (max-width: 1000px) {
+
+    .feature-image-bg {
+        width: 92%;
+        background-size: cover;
+        aspect-ratio: 1.6;
+        min-height: 0;
+    }
+
+    section.no-bg {
+        padding: 0;
+    }
+
+    .feature-text-block {
+        padding: 1rem;
+    }
+
+    section.feature p {
+        padding: 1rem;
+    }
+    section.feature h3 {
+        font-size: 2.0rem;
+        margin: 1rem 0;
+    }
 
     h1 {
         font-size: 2.3rem;
@@ -337,7 +381,7 @@ iframe {
     }
 
     section span {
-        width: 80%;
+        width: 90%;
     }
 
     .release-notes-list {
@@ -402,7 +446,7 @@ iframe {
 .hero-overlay-text h1 {
     font-size: 3rem;
     margin: 0;
-    font-family: 'Jost', sans-serif;
+    font-family: "Nanum Myeongjo", serif;
     text-shadow: 3px 3px 13px black;
     font-weight: 300;
     color: white;
