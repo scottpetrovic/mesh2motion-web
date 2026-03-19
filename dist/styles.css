@@ -43,6 +43,15 @@ header {
     z-index: 10; /* helps to get video elements behind the header */
 }
 
+hr {
+    color: white;
+    border-width: medium;
+    border-color: white;
+    border-style: dashed;
+    width: 90%;
+    display: flex;
+}
+
 a {
     color: var(--link-color);
     text-decoration: underline;
@@ -123,9 +132,27 @@ section {
     /* background: radial-gradient(circle,rgba(24, 79, 82, 1) 0%, rgba(77, 97, 168, 1) 100%); */
 }
 
+.feature {
+    padding: 0;
+    gap: 0;
+}
+
+.feature-text-block {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.feature {
+    max-width: 90rem;
+    min-height: 30rem;
+}
+
 section.feature h3 {
     background: none;
     padding: 0;
+    margin: 0;
 }
 
 section.no-bg {

@@ -54,18 +54,17 @@
             </div>
         </div>
 
-
         <!-- actually saying "features" might be a bit too 'on the nose' -->
         <section id="features" style="flex-direction: column; gap: 0; align-items: center; visibility: hidden;"></section>
 
 
         <section class="feature">
 
-                <span>
-                        <img src="./images/animal-example.png" alt="Screenshot of the application" />
+                <span 
+                style="background-image: url('./images/animal-example.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 50%; height: auto;">
                 </span>
 
-                <span>
+                <span class="feature-text-block">
                     <h3>Import &#8674; Rig &#8674; Animate &#8674; Export</h3>
 
                     <p>Full skeleton rigs, intuitive positioning, and a full undo/redo history so you can experiment.</p>
@@ -82,7 +81,7 @@
 
         <section class="feature">
            
-            <span>
+            <span class="feature-text-block">
                 <h3>Modify & Import Animations</h3>
                 <p>Mesh2Motion provides all the source Blender model and animation files for you to study and improve.</p>
                 <ul>
@@ -96,19 +95,19 @@
             </span>
 
 
-            <span>
-                <img src="./images/human-animations-list.png" alt="Screenshot of the application" />
+            <span 
+            style="background-image: url('./images/human-animations-list.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 50%; height: auto;">
             </span>
-
 
         </section>
 
         <section class="feature">
-            <span>
-                <img src="./images/human-animations-list.png" alt="Screenshot of the application" />
+
+            <span 
+            style="background-image: url('./images/human-animations-list.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 50%; height: auto;">
             </span>
 
-            <span>
+            <span class="feature-text-block">
                 <h3>Export Bundled Animation File</h3>
                 <p>Export multiple animations at once - all packed into a single GLB. The format natively supported by game engines, Three.js, Babylon.js, and most modern 3D pipelines.</p>
                 <ul>
@@ -123,8 +122,14 @@
 
 
 
+
+
+
+
         <section style="flex-direction: column; gap: 0.5rem; align-items: center; background: none; box-shadow: none;">
             <h2>About this Project</h2>
+
+            <hr />
 
             <p class="two-col" >I started Mesh2Motion in late 2023 as an experiment to learn more about how 3d web technologies work in regards to skeleton, rigging, skinning, and animation. I always felt there was a desire to build and evolve tools like Mixamo, but the closed-source nature made that impossible. I slowly kept working on Mesh2Motion on nights and weekends to satisfy my curiosities. The goal of this project is to provide a free and easy way to animate 3D models for web and game engines. Everything should be freely available for both personal and commercial projects. People need to be able to "riff" on the existing code base, as well as study Blender files and animations.</p>
 
@@ -133,6 +138,7 @@
 
         <section style="flex-direction: column; gap: 0.5rem; align-items: center; background: none; box-shadow: none;">
             <h2>AI Transparency</h2>
+            <hr/>
 
             <p class="two-col" >The 3d models are hand-crafted, the animations are hand-keyed, and the rigs are all created by me manually. When you use the tool, there are no LLMs working and no APIs processing, or training, data. Mesh2Motion only uses standard javascript/typescript. I have used AI as an assistant to help me code some of the more technical aspects of the javascript that I struggle with. I will not be using LLMs or connecting to AI models for features for this project.</p>
 
