@@ -123,6 +123,11 @@ section {
     /* background: radial-gradient(circle,rgba(24, 79, 82, 1) 0%, rgba(77, 97, 168, 1) 100%); */
 }
 
+section.feature h3 {
+    background: none;
+    padding: 0;
+}
+
 section.no-bg {
     background: none;
     box-shadow: none;
@@ -159,7 +164,8 @@ section span {
 /* for long text to break it into multiple columns */
 .two-col {
     column-count: 2;
-    padding: 0 4rem;
+    padding: 0 2rem;
+    column-gap: 3rem;
 }
 
 
@@ -261,6 +267,14 @@ iframe {
     max-width: 100%;
 }
 
+.tag {
+    font-weight: 300;
+    border: 1px solid #ffffff38;
+    padding: 0.25rem 0.5rem;
+    font-size: 80%;
+    border-radius: 0.5rem;
+}
+
 /* mobile styles */
 
 @media (max-width: 1000px) {
@@ -338,16 +352,12 @@ iframe {
 
 
 .hero-overlay-text {
-    position: relative;
     z-index: 3;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
     padding: 2rem;
-    background: none;
-    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 /* Dark overlay for hero video */
@@ -363,14 +373,16 @@ iframe {
 }
 
 .hero-overlay-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin: 0;
     font-family: 'Jost', sans-serif;
     text-shadow: 3px 3px 13px black;
-    font-weight: 200;
+    font-weight: 300;
     color: white;
 }
 
 .hero-overlay-text p {
-    font-size: 1.25rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
 }

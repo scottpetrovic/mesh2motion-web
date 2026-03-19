@@ -24,8 +24,6 @@
                     </a>
                 </li>
                 <li class="mobile-hidden"><a href="index.html#features">Features</a></li>
-                <li class="mobile-hidden"><a href="index.html#walkthrough">Walkthrough</a></li>
-                <li class="mobile-hidden"><a href="index.html#contribute">Contribute</a></li>
                 <li class="mobile-hidden"><a href="news.html">News</a></li>
                 <li class="mobile-hidden"><a href="https://support.mesh2motion.org">💗 Support</a></li>
                 <li class="mobile-hidden">
@@ -45,10 +43,15 @@
             </video>
             <div class="hero-video-overlay"></div>
             <div class="hero-overlay-text">
-                <h1>Bring Your 3D Models to Life</h1>
-                <p><em>Mesh2Motion</em> is a FREE & open-source web application to animate your 3D models. <br/>Supports humanoid, four-legged, and bird creatures.</p>
+                <h1>Animate Animals, Monsters and Humans</h1>
+                <p>3D animation library and auto-rigging tool for the web and game engines.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <span class="tag">No subscription</span>
+                    <span class="tag">Runs in your browser</span>
+                    <span class="tag">Free & Open Source</span>
+                </div>
 
-                <a class="primary-button" href="https://app.mesh2motion.org">Try it out</a>
+                <a class="primary-button" style="display: inline-flex; width: fit-content" href="https://app.mesh2motion.org">Launch Application</a>
             </div>
         </div>
 
@@ -57,7 +60,7 @@
         <section id="features" style="flex-direction: column; gap: 0; align-items: center; visibility: hidden;"></section>
 
 
-        <section id="features-2">
+        <section class="feature">
 
                 <span>
                     <div class="img-swish-wrap">
@@ -66,10 +69,13 @@
                 </span>
 
                 <span>
-                    <h3>🥳 Human & Animal rigs</h3>
+                    <h3>Import &#8674; Rig &#8674; Animate &#8674; Export</h3>
+
+                    <p>Full skeleton rigs, intuitive positioning, and a full undo/redo history so you can experiment.</p>
+
                     <ul>
                         <li>Supports importing GLB, GLTF, DAE, and FBX models</li>
-                        <li>Human and animal skeleton options</li>
+                        <li>Animation rigs  for Birds, Dragons, Spiders, Kaiju, Foxes, and Humans</li>
                         <li>Intuitive skeleton positioning</li>
                         <li>Undo/Redo system when you make mistakes</li>
                     </ul>  
@@ -77,14 +83,18 @@
    
         </section>
 
-        <section id="features-3">
+        <section class="feature">
            
             <span>
-                <h3>✔️ Export Animations</h3>
+                <h3>Modify & Import Animations</h3>
+                <p>Mesh2Motion provides all the source Blender model and animation files for you to study and improve.</p>
                 <ul>
-                    <li>Export multiple animations at once</li>
-                    <li>Uses widely-supported GLB format</li>
-                    <li>Human animation library from <a href="https://quaternius.com/" target="_blank">Quaternius</a></li>
+                    <li>Improve or add new animations from the Blender rigs provided</li>
+                    <li>Import animations into Mesh2Motion to test compatibility</li>
+                    <li>Free for personal or commercial use. Licensed under CC0.</li>
+                    <li>All source files available on GitHub.  
+                        <a target="_blank" href="https://github.com/Mesh2Motion/mesh2motion-assets/">Blender source files</a></li>
+                    <li>Some human animations from <a href="https://quaternius.com/" target="_blank">Quaternius</a></li>
                 </ul>
             </span>
 
@@ -98,54 +108,50 @@
 
         </section>
 
+        <section class="feature">
+            <span>
+                <div class="img-swish-wrap">
+                    <img src="./images/human-animations-list.png" alt="Screenshot of the application" />
+                </div>
+            </span>
 
-        <h2 id="walkthrough">Video Walkthrough</h2>  
-
-        <section  style="padding: 0; margin: 0;">            
-            <iframe src="https://www.youtube.com/embed/pDUxgNgBhTQ"></iframe>
-        </section>  
-
-
-        <section id="open-source" style="flex-direction: column; gap: 0; align-items: center">
-            <h2>FREE &amp; Open-Source</h2>
-
-            <p class="two-col" >Mesh2Motion is an open-source project.  With the way 3d animations and modeling tools are progressing, there just needs to be some tool like this that is open-source that can evolve. The goal of this project is to provide a free and easy way to animate 3D models for web and game engines. Everything should be freely available for both personal and commercial projects. 
-                
-                Check out the <a href="https://github.com/scottpetrovic/mesh2motion-app/">GitHub repository</a> for all the code.</p>                
-        </section>
-
-        <section id="contribute" style="flex-direction: column; gap: 0; align-items: center">
-            <h2>Contribute</h2>
-            <div class="two-col" >
-                <p>Any feedback given is helpful, even if it isn't contributing code or 3d animations. If you're interested in contributing adding animations, rigs, or anything else, please reach out. You can find all these links pretty easily from the Github page, but listing them here for convenience:</p>
-             
-                <h4>Helpful links</h4>
+            <span>
+                <h3>Export Bundled Animation File</h3>
+                <p>Export multiple animations at once - all packed into a single GLB. The format natively supported by game engines, Three.js, Babylon.js, and most modern 3D pipelines.</p>
                 <ul>
-                    <li>
-                        <a target="_blank" href="https://github.com/scottpetrovic/mesh2motion-app/tree/main">Building the project</a>
-                    </li>
-                    <li>
-                    <a target="_blank" href="https://github.com/Mesh2Motion/mesh2motion-assets/">Animation source files and rigs</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://discord.gg/UChE936q7y">Discord server invite link</a>
-                    </li>
+                    <li>Export multiple animations at once</li>
+                    <li>Uses widely-supported GLB format</li>
+                    <li>Free for personal or commercial use. Licensed under CC0.</li>
+                    <li>Human animation library from <a href="https://quaternius.com/" target="_blank">Quaternius</a></li>
                 </ul>
-            </div>
+            </span>
+        
+        </section>
 
-           
+
+
+        <section style="flex-direction: column; gap: 0.5rem; align-items: center; background: none; box-shadow: none;">
+            <h2>About this Project</h2>
+
+            <p class="two-col" >I started Mesh2Motion in late 2023 as an experiment to learn more about how 3d web technologies work in regards to skeleton, rigging, skinning, and animation. I always felt there was a desire to build and evolve tools like Mixamo, but the closed-source nature made that impossible. I slowly kept working on Mesh2Motion on nights and weekends to satisfy my curiosities. The goal of this project is to provide a free and easy way to animate 3D models for web and game engines. Everything should be freely available for both personal and commercial projects. People need to be able to "riff" on the existing code base, as well as study Blender files and animations.</p>
 
         </section>
 
-        <section id="contact" style="flex-direction: column; gap: 0; align-items: center">
-            <h2>Contact</h2>
-            <div class="two-col">
-                
-                <p style="margin-top: 0">The best place for bug reports and feedback is on the GitHub page. If you don't have GitHub, you could also try my socials:</p>
+
+        <section style="flex-direction: column; gap: 0.5rem; align-items: center; background: none; box-shadow: none;">
+            <h2>AI Transparency</h2>
+
+            <p class="two-col" >The 3d models are hand-crafted, the animations are hand-keyed, and the rigs are all created by me manually. When you use the tool, there are no LLMs working and no APIs processing, or training, data. Mesh2Motion only uses standard javascript/typescript. I have used AI as an assistant to help me code some of the more technical aspects of the javascript that I struggle with. I will not be using LLMs or connecting to AI models for features for this project.</p>
+
+        </section>
+
+
+          <section class="feature" style="align-items: center">
+            <p>These are the platforms I make updates on the most.</p>
 
                 <ul style="list-style: none;">
                     <li>
-                        <img class="social-logo" src="./images/github-dark.svg" width="25" alt="Github" title="Github" /> github.com/scottpetrovic/mesh2motion-app </li>
+                        <img class="social-logo" src="./images/github-dark.svg" width="25" alt="Github" title="Github" /> https://github.com/Mesh2Motion/ </li>
                     <li>
                         <img class="social-logo" src="./images/x-dark.svg" width="25" alt="X" title="X" /> @scottpetrovic
                     </li>
@@ -153,13 +159,15 @@
                         <img class="social-logo" src="./images/bsky.svg" width="25" alt="Bluesky" title="Bluesky"  /> @scottpetrovic.bsky.social
                     </li>
                 </ul>
-
-            </div>
-            
+          </section>
 
 
 
-        </section>
+
+
+
+
+
 
     </main>
     <footer>
