@@ -19,7 +19,7 @@ html {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Jost', Arial, Helvetica, sans-serif
+    font-family: "Nanum Myeongjo", serif;
 }
 
 h4 {
@@ -160,16 +160,15 @@ section.feature {
     background: linear-gradient(177deg, #2b2d40, #1e1f2d);
 }
 
+
 section.feature h3 {
     background: none;
     padding: 0;
     margin: 0;
     color: var(--text-accent-color);
     font-family: "Nanum Myeongjo", serif;
-    text-transform: uppercase;
-    font-weight: bold;
     letter-spacing: 8%;
-    line-height:130%;
+    line-height:120%;
 }
 
 section.no-bg {
@@ -182,6 +181,10 @@ section.news-item {
     gap: 0;
     padding: 3rem 6rem;
     box-sizing: border-box;
+}
+
+section.news-item h2 {
+    margin-bottom: 1rem;
 }
 
 section.news-item h3, h3 {
@@ -492,16 +495,14 @@ iframe {
 .feature-sub-card h3 {
     margin: 0;
     background: none;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     display: flex;
     justify-content: center;
     text-align: center;
     font-family: "Nanum Myeongjo", serif;
     color: var(--text-accent-color);
-    text-transform: uppercase;
-    font-weight: bold;
     letter-spacing: 8%;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 .feature-sub-card p {
     padding: 1rem;
