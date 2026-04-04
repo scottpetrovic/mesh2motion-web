@@ -513,3 +513,28 @@ iframe {
      height: 20rem; 
      background-size: cover;
 }
+
+
+
+.pagination-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+    padding: 2rem;
+}
+
+.paging-link {
+    padding: 1rem; 
+    background: none;
+    border-radius: 1rem; 
+    text-decoration: none;
+    color: white;
+}
+.paging-link:hover {
+    background: #434061;
+    border-radius: 0.5rem; 
+}
+
+.paging-link.active {  
+    background: #394359; 
+}
