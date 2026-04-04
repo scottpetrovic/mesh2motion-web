@@ -47,6 +47,63 @@
 
 
         <section class="news-item">
+            <h2>Update 10: Spiders and Snakes</h2>
+            <div class="news-date">4/4/2026 | Scott Petrovic</div>
+
+
+        <h3>Spider and Snake rig</h3>
+        <video controls autoplay muted loop style="width: 100%;">
+            <source src="images/update10/snake-spider-rigs.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>The spider comes with 9 animations including the basics like idle, walk, attack, and death. The snake comes with 7 animations with similar animations. Part of adding these was to expand the variety of rigs to see how well this tool can support different types of creatures.</p>
+
+
+        <h3>Skeleton Editing Improvements</h3>
+
+        <video controls autoplay muted loop style="width: 100%;">
+            <source src="images/update10/bone-placement-edit.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>Easier to drag bone joints to the right position. The position will snap to the middle of the mesh. The other transform options also exist as a toggle if you want to still use that.</p>
+
+        <ul>
+            <li>Make bone joints display slightly larger and semi-transparent to help see overlapping joints.</li>
+            <li>When moving bones with mirror mode, hide one side of bone joints to make positioning easier to see bones.</li>
+            <li>Add option to move bones independently so they don't affect the child bone positions.</li>
+            <li>Add an option for moving bones to volume center for easier placement</li>
+        </ul>
+
+
+
+        <h3>Other release notes</h3>
+            <ul class="release-notes-list">
+                <li>Model upload: Add a 3d transform widget to fix model position after adding. (by new contributor DarthMarino)</li>
+                <li>Add a new gear icon to show  settings. Theme toggle was moved here. Also added new way to control light intensity. More options might come later like turning on/off grid or showing data.</li>
+                <li>Human animations: Tweaked Quaternius neck bone position to be in line with custom animations for consistency.</li>
+                <li>Animation list: Improve 'lazy loading' of previews to minimize image 'popping' that was happening</li>
+                <li>Make all registration animation poses called "Rest Pose" across rigs instead of calling all a T-pose for standardization.</li>
+                <li>Upload your model: Change A-Pose correction for human to arm extension since that is done automatically now.</li>
+                <li>Added a new learn section to the site to add YouTube videos or other training material</li>
+                <li>Upload your own rig: Added skeleton hiearchy display for better debugging</li>
+                <li>Upload your own rig: Show how many skinned meshes exist in the target rig for better debugging</li>
+                <li>Upload your own rig: Do a better job clearing all bone mappings when using the clear all button</li>
+                <li>Upload your own rig: Add text filtering to source and target bones to help find them quicker.</li>     
+                <li>Skinning algorithm: Try to add a more targeted skinning algorithm based on bone types: torso, limbs, wings, tail for better deformation.</li>
+                <li>Rename "quadraped" verbiage to "fox" since we might have other quadraped types in the future </li>
+                <li>Tech upgrade: Have all the rigs use a configuration file to dynamically populate the UI areas. This will make it much easier to add new rigs in the future</li>
+                <li>Tech upgrade: Upgraded to latest libraries: three.js, typescript, vite, eslint</li>
+                <li>Tech upgrade: Add ability in code to add extra 3d models. Added an A-Pose human animation for testing for now.</li>
+
+            </ul>
+
+        </section>
+
+
+
+        <section class="news-item">
             <h2>Update 9: Import Custom Animations</h2>
             <div class="news-date">3/4/2026 | Scott Petrovic</div>
             
