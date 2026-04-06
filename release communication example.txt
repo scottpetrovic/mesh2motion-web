@@ -1,0 +1,22 @@
+🎉 Mesh2Motion: Release 10 🎉 
+
+
+Spider and Snake Rigs Added
+
+
+x
+
+9 spider animations and 7 snake animations ready to use
+
+
+Move bones more easily with better position controls
+
+x
+
+Move bones that snap to the mesh for easier placement. Also option to move bones independently of children
+
+Check out the full release notes with all changes: https://mesh2motion.org/news
+Try it out: https://app.mesh2motion.org/
+
+
+
