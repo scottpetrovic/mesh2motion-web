@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="organic-divider.css">
+    <link rel="stylesheet" href="mail-lite-newsletter.css">
 
 </head>
 
@@ -100,6 +101,81 @@
             </ul>
 
         </section>
+
+
+
+        <!-- START MAIL LITE NEWSLETTER CODE-->
+
+        <div id="mlb2-39473010" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-39473010">
+            <div class="ml-form-align-center ">
+                <div class="ml-form-embedWrapper embedForm">
+
+                    <div style="padding: 2rem;" class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
+                        <div class="ml-form-embedContent">              
+                            <h2 style="text-align: center;">Newsletter</h2>
+                            <p>Get notifications via email when new releases come out to stay updated.</p>
+                        </div>
+
+                        <form style="display: flex; flex-direction: column; gap: 1rem;"
+                            action="https://assets.mailerlite.com/jsonp/2245999/forms/183931225548785439/subscribe" data-code="" method="post" target="_blank">
+                                        
+                            <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                                <input type="email" 
+                                    style="width: 100%; padding: 1rem; box-sizing: border-box;" 
+                                    class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                            </div>
+
+                            <div class="ml-button-horizontal primary ">
+                                
+                                <button style="width: 100%; " type="submit" class="primary-button">Subscribe</button>
+                                
+                                <button disabled="disabled" style="display: none;" type="button" class="loading">
+                                <div class="ml-form-embedSubmitLoad"></div>
+                                <span class="sr-only">Loading...</span>
+                                </button>
+                            </div>
+
+                            <div style="display: flex" class="ml-form-recaptcha ml-validate-required" >
+                                <div class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
+                                
+                            </div>
+
+                                <input type="hidden" name="ml-submit" value="1">
+                                <div class="ml-mobileButton-horizontal">
+                                    <button type="submit" class="primary">Subscribe</button>
+                                    <button disabled="disabled" style="display: none;" type="button" class="loading">
+                                    <div class="ml-form-embedSubmitLoad"></div>
+                                    <span class="sr-only">Loading...</span>
+                                </button>
+                            </div>
+                            <input type="hidden" name="anticsrf" value="true">
+                        </form>
+                    </div>
+
+                    <div class="ml-form-successBody row-success" style="display: none">
+                        <div class="ml-form-successContent" style="text-align: center">
+                            <h2>Thank you!</h2>
+                            <p>You have successfully joined our subscriber list.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
+        <script>
+            function ml_webform_success_39473010() {
+                var $ = ml_jQuery || jQuery;
+                $('.ml-subscribe-form-39473010 .row-success').show();
+                $('.ml-subscribe-form-39473010 .row-form').hide();
+            }
+
+            fetch("https://assets.mailerlite.com/jsonp/2245999/forms/183931225548785439/takel")
+        </script>
+
+        <!-- END MAIL LITE NEWSLETTER CODE-->
+
 
 
 
