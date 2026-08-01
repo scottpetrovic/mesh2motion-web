@@ -8,7 +8,7 @@
     <title>Mesh2Motion News</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="organic-divider.css">
@@ -45,6 +45,75 @@
 
         <h1 style="margin: 7rem auto; margin-bottom: 0rem;">News</h1>
         <hr class="organic-divider" />
+
+
+        <section class="news-item">
+            <h2 id="update12">Update 12: Horses and Offline Application</h2>
+            <p class="news-date">8/2/2026 | Scott Petrovic</p>
+
+            <h3>Horse Rig and base animations</h3>
+            <img src="images/update12/horse-rig.png" alt="Horse Rig" />
+            <p>This isn't just a bigger fox rig! The new horse rig is an entirely new creation with a set of 13 animations. Where the fox would have have a more stealthy set of movements, the horse is more majestic by carrying itself up with its long neck and unique walking gaits. These animations will hopefully expand and improve as time goes on.</p>
+
+
+            <h3>Offline Application</h3>
+            <p>The Mesh2Motion app can now be used offline. This allows users to continue working on their projects without an internet connection. All the features on the online version work the same as the offline version.</p>
+
+            <h3>40 new human animations</h3>
+            <p>Because people can never have enough human animations. I have been getting random requests for the past couple months and finally added some common ones. This brings the total count over 160 animations for the human rig. Some of the animations are the following:</p>
+
+            <ul>
+                <li>Strafing</li>
+                <li>Gliding</li>
+                <li>Ladder movement</li>
+                <li>More death animations</li>
+                <li>Bow and Arrow</li>
+                <li>Dodging</li>
+                <li>More zombie related animations</li>
+            </ul>
+
+
+            <h3>Improved bone visualization</h3>
+            <img src="images/update12/bone-visualization.png" alt="Bone visualization" />
+            <p>The green "stick" skeletons were okay, but there were certain things that were difficult to communicate. These were the current issues:</p>
+
+            <ol>
+                <li>The orientation, or "bone roll", was impossible to see before. This is the rotation around the bone's local axis.</li>
+                <li>With some of the rigs, the bones start overlapping each other and it is hard to tell them apart. This can make the bone placement more difficult.</li>
+            </ol>
+
+            <p>With the new skeleton, it is easier to debug and see how the bones are rotating. There is a system to the colorization as well. Different bone types are categorized and colored differently. For example spine related bones are always green. This allows the "skinning" algorithm to do a better job by behaving different depending on the bone type. This bone classification is pretty new. This is something I plan on developing more in the future.</p>
+
+
+            <h3>Other release notes</h3>
+            <ul class="release-notes-list">
+                <li>Remove icon toggles and make them more explicit with pill type buttons with text</li>
+                <li>Improve touch devices by using pointer events instead of mouse events</li>
+                <li>Show a separate "selected" animations area before exporting to make it easier to review larger lists</li>
+                <li>Move google fonts locally in app to help with offline usage</li>
+                <li>New updated favicon for tab</li>
+                <li>Animation video previews use MP4 format now to be more cross-platform support for offline use</li>
+                <li>Improve error messaging when importing aniamtions fail with bone naming </li>
+                <li>Make transfom controls more compact when moving or rotating</li>
+                <li>Message notification when the application goes offline</li>
+                <li>Add "extemity" bone classification to help with skinning tips like fingers and toes</li>
+                <li>Implement missing hand algorithm for better skinning.  </li>
+                <li>Add ability to export all animations with "select all" toggle</li>
+                <li>Ignore using tip/leaf bones when skinning. Their orientations were messing up the finger tips.</li>
+                <li>Make animation names consistent by adding underscores instead of spaces.</li>
+                <li>Add download option to only export out animation data without mesh</li>
+                <li>Add a nose bone to a couple rigs to fix skinning process with broken mouths (fox and kaiju)</li>
+                <li>Fixed a couple model variations so they load correctly with base models</li>
+                <li>Add a wireframe toggle button by skeleton toggle to help test out skinning results</li>
+                <li>Better error handling with retargeting if bones are missing parents. </li>
+                <li>Show warning with retargeting if there is a flat bone hierarchy with some imported Mixamo rigs</li>
+            </ul>
+
+
+
+
+        </section>
+
 
         <section class="news-item">
             <h2>Update 11: Model variations</h2>
@@ -292,104 +361,6 @@
                 <li>Make page titles consistent</li>
                 <li>Tried making page names a bit more descriptive with their use case</li>
             </ul>
-
-        </section>
-
-
- 
-        <section class="news-item">
-            <h2 id="update7">Update 7: Root Motion, Mirroring, New Animations</h2>
-            <p class="news-date">11/18/2025 | Scott Petrovic</p>
-
-            <p>There is a balancing act that happens every development cycle with doing code related features, fixes, and creating animations. While the Mesh2Motion platform still needs work with better rigging features, I understand that people also want more animations as well. As a one-person team, I have to prioritize the biggest pain points I hear about from social media without getting burnt out. This means releases will be small. This is still just a hobby project I work on in my free time.</p>
-
-            <p>I have been learning more about how to make animations using Blender with video tutorials. A nice feature I have been starting to use recently is the "motion paths" for an animation. This is shown in the skeleton tab in Blender's property area. It does a great job communicating two things: how smooth the animation paths are  with showing the arcs, how evenly spaced keyframes are to have smooth animations.  I would still not consider myself an animator, but am getting more comfortable with the workflow that Blender provides. If a professional animator comes by and wants to give me any pointers, I would welcome the advice. </p>
-
-            <p>Finally, if you want to see this project grow and give me more motivation, consider giving a small tip. With this project, or any open source project, you would be surprised the positive energy that is transferred to the person working on it. I just added Stripe integration recently with a number of options as well as a Venmo option for USA peeps.</p>
-
-            <p>
-                <a class="primary-button" target="_blank" href="https://support.mesh2motion.org"> ❤️ Support the project</a>
-            </p>
-
-            <h3>Root motion support</h3>
-            <div class="release-notes-list">
-                <img src="images/update7/root-motion.png" alt="Root motion example" />
-                <p>Root motion supported for animations. If an animation has a "RM" at the end, root position keyframes can be changed. Only one animation exists now in the app to start as a proof of concept. This will work for all skeleton types.</p>
-            </div>
-
-            <h3>Mirror animations</h3>
-            <div class="release-notes-list">
-                <p>On the animation listing step, there is an option to mirror the animations. All animations are affected for now so you cannot cherry pick which animations you want mirrored. Long term I want to give each animation more options to control this. The initial goal was to get the code logic needed to do the mirroring.</p>
-                <img src="images/update7/mirror-animation.png" alt="Mirror animation example" />
-            </div>
-
-            <h3>Head/body separation option</h3>
-            <div class="release-notes-list">
-                <img src="images/update7/head-plane.png" alt="Chibi head example" />
-                <p>When editing the skeleton, there is now an option to separate the head from the body for human skeletons. This is useful for chibi style characters where the head is much larger than normal. There are more situations this tool doesn't handle such as long hair behind the model's back. I might improve this feature in the future to be more flexible instead of a simple plane control.</p>
-            </div>
-
-            <h3>New animations</h3>
-
-            <p>I haven't been very explicit with how you can use all these animations. Everything art related (3d models, animations) are CC0. This means you can use it for anything personal or commercial. You can remix, modify, or improve any of the content I have. I updated the Github repository with a bit more information around this in the license area.</p>
-
-            <p>I am starting to spend more time making animations as well. As I get better at animations I will probably come back to some of these, but they seemed alright for now. These are the new animations added for this release:</p>
-
-            <div class="release-notes-list" style="margin-top: 2rem;">
-                
-                <h4 style="margin-top: 0">Fox animations added:</h4>
-                <ul>
-                    <li>Fall</li>
-                    <li>Idle Alert</li>
-                    <li>Jump</li>
-                    <li>Bark</li>
-                </ul>
-
-                <h4>Human animations added:</h4>
-                <ul>
-                    <li>Angry</li>
-                    <li>Bow</li>
-                    <li>Confused</li>
-                    <li>Consume Power up</li>
-                    <li>Crawl</li>
-                    <li>Crawl RM (root motion)</li>
-                    <li>Dance Body Roll</li>
-                    <li>Dance Charleston</li>
-                    <li>Dance Reach Hip</li>
-                    <li>Defend</li>
-                    <li>Head Nod</li>
-                    <li>Idle Listening</li>
-                    <li>Meditate</li>
-                    <li>Power up</li>
-                    <li>Reject</li>
-                    <li>Run anime</li>
-                    <li>Tired Hunched</li>
-                    <li>Tired Kneeling</li>
-                    <li>Throw Ball</li>
-                    <li>Victory</li>
-                </ul>
-            </div>
-
-
-
-            <h3>Other release notes</h3>
-            <ul class="release-notes-list">
-               
-                <li>Added Progress loader when loading all the animations since the file size will start getting larger</li>
-                <li>Better bone selection by taking the camera zoom level into account.</li>
-                <li>Fix for dragon rig in the head area that was caused by a bone roll rotation issue</li>
-                <li>Removed extra neck bone on human rig to give better default results. </li>
-                <li>Added reset buttons for A-Pose and skeleton scale for better UX</li>
-                <li>Explore page uses a different camera angle to better show off perspective</li>
-                <li>Expand camera zooming range to help working with smaller and larger model files</li>
-                <li>Change slider value range to allow skeleton scale to shrink more</li>
-                <li>Validate FBX loading to verify broken images and replace with default material. A message is shown if a broken image is found</li>
-                <li>Reset scale to 1.0 when importing model to normalize import process better</li>
-                <li>Show the GIT commit hash on the bottom left to know what version is released. This is specific to how Cloudflare works, so it probably won't work if you host it yourself using something else.</li>
-                <li>Added support link to top navigation in case people want to support project using Stripe platform</li>
-                <li>Platform tech upgrades: Node v24.11, three.js v181, Vite 7.2</li>
-            </ul>
-
 
         </section>
 
