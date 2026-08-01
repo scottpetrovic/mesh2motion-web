@@ -53,14 +53,17 @@
 
             <h3>Horse Rig and base animations</h3>
             <img src="images/update12/horse-rig.png" alt="Horse Rig" />
-            <p>This isn't just a bigger fox rig! The new horse rig is an entirely new creation with a set of 13 animations. Where the fox would have have a more stealthy set of movements, the horse is more majestic by carrying itself up with its long neck and unique walking gaits. These animations will hopefully expand and improve as time goes on.</p>
+            <p>This isn't just a bigger fox rig! The new horse rig is an entirely new creation with a set of 13 animations. Where the fox would have a more stealthy set of movements, the horse is more majestic by carrying itself up with its long neck and unique walking gaits. These animations will hopefully expand and improve as time goes on.</p>
 
 
-            <h3>Offline Application</h3>
-            <p>The Mesh2Motion app can now be used offline. This allows users to continue working on their projects without an internet connection. All the features on the online version work the same as the offline version.</p>
+            <h3>Work Offline</h3>
+            <img src="images/update12/offline-app.png" alt="offline application" />
+            <p>The Mesh2Motion app can now be used offline. This allows users to continue working on their projects without an internet connection. All the features in the online version work the same as in the offline version. This should have working versions on all the desktop operating systems like Windows, Mac, and Linux. This is the first release of this, so there might be bugs I didn't catch while testing.</p>
 
-            <h3>40 new human animations</h3>
-            <p>Because people can never have enough human animations. I have been getting random requests for the past couple months and finally added some common ones. This brings the total count over 160 animations for the human rig. Some of the animations are the following:</p>
+            <p>Check out the downloads on Github: <a target="_blank" href="https://github.com/Mesh2Motion/mesh2motion-desktop/releases/tag/v0.1.10">Offline Desktop App</a></p>
+
+            <h3>Added 40 human animations</h3>
+            <p>Because people can never have enough human animations. I have been getting random requests for the past couple of months and finally added some common ones. This brings the total count to over 160 animations for the human rig. Some of the animations are the following:</p>
 
             <ul>
                 <li>Strafing</li>
@@ -82,7 +85,7 @@
                 <li>With some of the rigs, the bones start overlapping each other and it is hard to tell them apart. This can make the bone placement more difficult.</li>
             </ol>
 
-            <p>With the new skeleton, it is easier to debug and see how the bones are rotating. There is a system to the colorization as well. Different bone types are categorized and colored differently. For example spine related bones are always green. This allows the "skinning" algorithm to do a better job by behaving different depending on the bone type. This bone classification is pretty new. This is something I plan on developing more in the future.</p>
+            <p>With the new skeleton, it is easier to debug and see how the bones are rotating. There is a system to the colorization as well. Different bone types are categorized and colored differently. For example, spine-related bones are always green. This allows the "skinning" algorithm to do a better job by behaving differently depending on the bone type. This bone classification is pretty new. This is something I plan on developing more in the future.</p>
 
 
             <h3>Other release notes</h3>
@@ -90,22 +93,22 @@
                 <li>Remove icon toggles and make them more explicit with pill type buttons with text</li>
                 <li>Improve touch devices by using pointer events instead of mouse events</li>
                 <li>Show a separate "selected" animations area before exporting to make it easier to review larger lists</li>
-                <li>Move google fonts locally in app to help with offline usage</li>
+                <li>Move Google Fonts locally in app to help with offline usage</li>
                 <li>New updated favicon for tab</li>
-                <li>Animation video previews use MP4 format now to be more cross-platform support for offline use</li>
-                <li>Improve error messaging when importing aniamtions fail with bone naming </li>
-                <li>Make transfom controls more compact when moving or rotating</li>
+                <li>Animation video previews use MP4 format now for better cross-platform support with offline use</li>
+                <li>Improve error messaging when importing animations fails because of bone naming</li>
+                <li>Make transform controls more compact when moving or rotating</li>
                 <li>Message notification when the application goes offline</li>
-                <li>Add "extemity" bone classification to help with skinning tips like fingers and toes</li>
-                <li>Implement missing hand algorithm for better skinning.  </li>
+                <li>Add "extremity" bone classification to help with skinning tips like fingers and toes</li>
+                <li>Implement missing hand algorithm for better skinning.</li>
                 <li>Add ability to export all animations with "select all" toggle</li>
                 <li>Ignore using tip/leaf bones when skinning. Their orientations were messing up the finger tips.</li>
                 <li>Make animation names consistent by adding underscores instead of spaces.</li>
                 <li>Add download option to only export out animation data without mesh</li>
-                <li>Add a nose bone to a couple rigs to fix skinning process with broken mouths (fox and kaiju)</li>
-                <li>Fixed a couple model variations so they load correctly with base models</li>
+                <li>Add a nose bone to a couple of rigs to fix skinning process with broken mouths (fox and kaiju)</li>
+                <li>Fixed a couple of model variations so they load correctly with base models</li>
                 <li>Add a wireframe toggle button by skeleton toggle to help test out skinning results</li>
-                <li>Better error handling with retargeting if bones are missing parents. </li>
+                <li>Better error handling with retargeting if bones are missing parents.</li>
                 <li>Show warning with retargeting if there is a flat bone hierarchy with some imported Mixamo rigs</li>
             </ul>
 
@@ -160,7 +163,7 @@
             Your browser does not support the video tag.
         </video>
 
-        <p>The spider comes with 9 animations including the basics like idle, walk, attack, and death. The snake comes with 7 animations with similar animations. Part of adding these was to expand the variety of rigs to see how well this tool can support different types of creatures.</p>
+        <p>The spider comes with 9 animations including the basics like idle, walk, attack, and death. The snake comes with 7 animations covering similar ground. Part of adding these was to expand the variety of rigs to see how well this tool can support different types of creatures.</p>
 
 
         <h3>Skeleton Editing Improvements</h3>
@@ -184,18 +187,18 @@
         <h3>Other release notes</h3>
             <ul class="release-notes-list">
                 <li>Model upload: Add a 3d transform widget to fix model position after adding. (by new contributor DarthMarino)</li>
-                <li>Add a new gear icon to show  settings. Theme toggle was moved here. Also added new way to control light intensity. More options might come later like turning on/off grid or showing data.</li>
+                <li>Add a new gear icon to show settings. Theme toggle was moved here. Also added new way to control light intensity. More options might come later like turning on/off grid or showing data.</li>
                 <li>Human animations: Tweaked Quaternius neck bone position to be in line with custom animations for consistency.</li>
                 <li>Animation list: Improve 'lazy loading' of previews to minimize image 'popping' that was happening</li>
-                <li>Make all registration animation poses called "Rest Pose" across rigs instead of calling all a T-pose for standardization.</li>
+                <li>Make all registration animation poses called "Rest Pose" across rigs instead of calling them all a T-Pose for standardization.</li>
                 <li>Upload your model: Change A-Pose correction for human to arm extension since that is done automatically now.</li>
                 <li>Added a new learn section to the site to add YouTube videos or other training material</li>
-                <li>Upload your own rig: Added skeleton hiearchy display for better debugging</li>
+                <li>Upload your own rig: Added skeleton hierarchy display for better debugging</li>
                 <li>Upload your own rig: Show how many skinned meshes exist in the target rig for better debugging</li>
                 <li>Upload your own rig: Do a better job clearing all bone mappings when using the clear all button</li>
                 <li>Upload your own rig: Add text filtering to source and target bones to help find them quicker.</li>     
                 <li>Skinning algorithm: Try to add a more targeted skinning algorithm based on bone types: torso, limbs, wings, tail for better deformation.</li>
-                <li>Rename "quadraped" verbiage to "fox" since we might have other quadraped types in the future </li>
+                <li>Rename "quadruped" verbiage to "fox" since we might have other quadruped types in the future</li>
                 <li>Tech upgrade: Have all the rigs use a configuration file to dynamically populate the UI areas. This will make it much easier to add new rigs in the future</li>
                 <li>Tech upgrade: Upgraded to latest libraries: three.js, typescript, vite, eslint</li>
                 <li>Tech upgrade: Add ability in code to add extra 3d models. Added an A-Pose human animation for testing for now.</li>
@@ -287,20 +290,20 @@
             
             <h3>Import custom animations</h3>
             <img src="images/update9/import-custom-animations.jpg" alt="Import custom animations" />
-            <p>One issue that I had was tring to tell animators how to test their Blender animations in the Mesh2Motion app. There was no easy way without pulling down the source code and manually loading in their animation file. Now the workflow is much easier. Much faster and easier verification before they might submit their animations to be included.</p>
+            <p>One issue that I had was trying to tell animators how to test their Blender animations in the Mesh2Motion app. There was no easy way without pulling down the source code and manually loading in their animation file. Now the workflow is much easier. Much faster and easier verification before they might submit their animations to be included.</p>
 
-            <p>This could also have a secondary benefit to allow people to make animation packs they could provide for free, or sell, or sites like gumroad. People could spend a bit of money and download a GLB file with animations. Those custom animations could then be imported into Mesh2Motion and used with the auto-rigging and default animations.</p>
+            <p>This could also have a secondary benefit to allow people to make animation packs they could provide for free, or sell on sites like Gumroad. People could spend a bit of money and download a GLB file with animations. Those custom animations could then be imported into Mesh2Motion and used with the auto-rigging and default animations.</p>
 
             <h3>Other release notes</h3>
             <ul class="release-notes-list">
-                <li>Added a number of Quatnerius animations from his latest pack for the human rig.</li>
+                <li>Added a number of Quaternius animations from his latest pack for the human rig.</li>
                 <li>Handle meshes with multiple materials on import. Previously there were errors when a mesh had multiple materials causing silent errors.</li>
                 <li>Retargeting: Fix animation data slowly getting messed up during retargeting process and export.</li>
                 <li>Retargeting: Make sure at least one bone mapping is done before allowing retargeting.</li>
                 <li>Retargeting: Shorten name for retargeting naming to "RT" to simplify names.</li>
                 <li>Move the toggle bone display to the player since import button expanded the tools area too much.</li>
                 <li>Updated human rig bones and animations to reflect new simplified bone naming.</li>
-                <li>Add contributor page to Github repository for better visiblity. </li>
+                <li>Add contributor page to Github repository for better visibility.</li>
                 <li>Improve tooltip visuals and instructions for download button</li>
                 <li>Minor styling for back buttons in process to help visual flow.</li>
                 <li>Upgrade three.js code library to 182</li>
@@ -339,11 +342,11 @@
                 <p>Upload an already rigged mesh to use the Mesh2Motion animations. This is a large feature that is still a work in progress. I have been working on it for the past two months. I want to push out the current state to see if people even use this before developing it more. There are two main use cases I could find for this: </p>
 
                 <ol>
-                    <li>You have a custom model where the Mesh2Motion web rigger cannot handle well. You want the animations, but you are a 3d person that wants control over the weight painting in your 3d tool. For this, people can use the Blender rig linked and do all the custom weight painting.</li>
+                    <li>You have a custom model that the Mesh2Motion web rigger cannot handle well. You want the animations, but you are a 3d person who wants control over the weight painting in your 3d tool. For this, people can use the Blender rig linked and do all the custom weight painting.</li>
                     <li>People have rigged meshes that use other bone structures or naming. This could be from other tools that do rig generation and have the vertices assigned to the bones already.</li>
                 </ol>
 
-                <p>The second use case with alternate bone names is where the feature gets complex. There are two main areas to think about when working with alternative bone structures. There is bone mapping, and bone roll. Bone mapping can be done manually, by assigning one named bone to another. Common mappings can use a template to go from one bone format to another.</p>
+                <p>The second use case with alternate bone names is where the feature gets complex. There are two main areas to think about when working with alternative bone structures. There is bone mapping, and there is bone roll. Bone mapping can be done manually, by assigning one named bone to another. Common mappings can use a template to go from one bone format to another.</p>
 
                 <p>The "bone roll" correction is often needed in addition to the bone map process. Even if two bones look the same, one could be rotated differently along the axis that pierces through the ends. If this orientation is different, all the rotation data is going to be wrong. A new contributor (Sketchpunklabs) <a href="https://sketchpunklabs.github.io/threejs_proto/code/webgl/anim/002_retarget.html">provided an algorithm/example to accomplish this</a>. This was extremely helpful.</p>
             </div>

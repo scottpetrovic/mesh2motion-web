@@ -193,6 +193,7 @@ section.news-item h3, h3 {
     background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 49%, rgba(42, 123, 155, 1) 100%);
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
 }
 
 
@@ -200,6 +201,7 @@ section img {
     border-radius: 30px;
     box-shadow: 2px 10px 18px 0px #281c32;
     margin: 3rem 0;
+    transform: scale(1.1);
 }
 
 section span {
