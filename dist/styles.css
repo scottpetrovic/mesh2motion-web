@@ -14,12 +14,12 @@ html {
 
 * {
     font-family: 'Jost', Arial, Helvetica, sans-serif;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     line-height: 150%;
 }
 
 h1, h2, h3, h4 {
-    font-family: "Nanum Myeongjo", serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 h4 {
@@ -36,7 +36,6 @@ body {
 header {
     background: var(--bg-color);
     color: var(--text-color);
-    padding: 1em;
     position: fixed;
     left: 0;
     right: 0;
@@ -61,9 +60,6 @@ a:hover {
     text-decoration: none;
 }
 
-a.active {
-    font-weight: bold;
-}
 
 img {
     max-width: 100%;
@@ -73,6 +69,7 @@ img {
 img.social-logo {
     box-shadow: none;
     filter: invert(1);
+    margin: 0.2rem;
 }
 
 em {
@@ -166,8 +163,8 @@ section.feature h3 {
     padding: 0;
     margin: 0;
     color: var(--text-accent-color);
-    font-family: "Nanum Myeongjo", serif;
-    letter-spacing: 8%;
+    font-family: "Josefin Sans", sans-serif;
+
     line-height:120%;
 }
 
@@ -188,20 +185,23 @@ section.news-item h2 {
 }
 
 section.news-item h3, h3 {
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-bottom: 1rem;
     background: #332c48;
-    padding: 1rem;
+    padding: 1rem 1.3rem;
     border-radius: 10px;
-    background: #529da1;
-    background: linear-gradient(270deg,rgba(82, 157, 161, 0) 0%, rgba(77, 97, 168, 0.52) 100%);
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 49%, rgba(42, 123, 155, 1) 100%);
     width: 100%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 
 section img {
-    border-radius: 5px;
+    border-radius: 30px;
     box-shadow: 2px 10px 18px 0px #281c32;
+    margin: 3rem 0;
+    transform: scale(1.1);
 }
 
 section span {
@@ -470,7 +470,7 @@ iframe {
 .hero-overlay-text h1 {
     font-size: 3rem;
     margin: 0;
-    font-family: "Nanum Myeongjo", serif;
+    font-family: "Josefin Sans", sans-serif;
     text-shadow: 3px 3px 13px black;
     font-weight: 300;
     color: white;
@@ -499,7 +499,7 @@ iframe {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: "Nanum Myeongjo", serif;
+    font-family: "Josefin Sans", sans-serif;
     color: var(--text-accent-color);
     letter-spacing: 8%;
     padding: 1.5rem 0;
